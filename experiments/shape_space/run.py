@@ -32,6 +32,7 @@ every synthetic deposit.
 
 from __future__ import annotations
 
+import datetime
 import itertools
 import json
 import pathlib
@@ -1102,7 +1103,7 @@ def main() -> int:
             "heat flux across it, synthetic recovery of the shape class on "
             "the NESCA core geometry by two classifiers, and the power of the test."
         ),
-        "_generated": "2026-09-23",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/shape_space/run.py",
         "_git_commit": git_hash(),
         "_inputs": [

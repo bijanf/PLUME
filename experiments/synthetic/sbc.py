@@ -10,6 +10,7 @@ Writes ``results/sbc.json``.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -119,7 +120,7 @@ def main() -> int:
 
     out = {
         "_description": "Simulation-based calibration of the nonparametric nu(Q) model.",
-        "_generated": "2026-09-17",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/synthetic/sbc.py",
         "_git_commit": git_hash(),
         "n_replicates": N_REP,

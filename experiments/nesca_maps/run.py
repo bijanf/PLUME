@@ -23,6 +23,7 @@ Monte Carlo drift is recorded next to the numbers.
 
 from __future__ import annotations
 
+import datetime
 import json
 import os
 import pathlib
@@ -335,7 +336,7 @@ def main() -> int:
             "view and against radius, and the joint posterior of total "
             "mass and mass-weighted mean flux."
         ),
-        "_generated": "2026-09-23",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/nesca_maps/run.py",
         "_git_commit": git_hash(),
         "shape_used": SHAPE,

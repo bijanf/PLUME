@@ -15,6 +15,7 @@ factor 2.8 in the inferred heat flux.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -115,7 +116,7 @@ def main() -> int:
 
     res = {
         "_description": "Clast shape inferred from the deposit's own length-scale ratios.",
-        "_generated": "2026-09-17",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/clast_shape/run.py",
         "_git_commit": git_hash(),
         "_why_this_works": (

@@ -22,6 +22,7 @@ It also records where the 15 h reference duration comes from.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -136,7 +137,7 @@ def main() -> int:
             "closures and settings, the in-situ thermal expansion, and the "
             "drift of each fraction per cm/s of ambient current."
         ),
-        "_generated": "2026-09-23",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/heat_budget/run.py",
         "_git_commit": subprocess.run(
             ["git", "-C", str(ROOT), "rev-parse", "HEAD"], capture_output=True, text=True

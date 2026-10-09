@@ -19,6 +19,7 @@ too, so every number on that figure has a results entry.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -185,7 +186,7 @@ def main() -> int:
             "posterior against the sampled marginal; widths of the "
             "heat-flux intervals in Fig. 4b."
         ),
-        "_generated": "2026-09-23",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/vent_misfit/run.py",
         "_git_commit": git_hash(),
         "shape_used": shape,

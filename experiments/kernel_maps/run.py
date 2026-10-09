@@ -25,6 +25,7 @@ Three products:
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -146,7 +147,7 @@ def main() -> int:
             "Figure 1e-g: space-time and settling-speed maps of the "
             "front-limited deposit at the reference constant-flux case."
         ),
-        "_generated": "2026-09-23",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/kernel_maps/run.py",
         "_git_commit": git_hash(),
         "_grids_file": "results/kernel_maps_grids.npz",

@@ -24,6 +24,7 @@ Writes ``results/heat_context.json``.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -301,7 +302,7 @@ def main() -> int:
             "ratios that follow, and the heat that lava cooling and dyke "
             "heating deliver over two of their parameters."
         ),
-        "_generated": "2026-09-23",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/heat_context/run.py",
         "_git_commit": git_hash(),
         "_inputs": [

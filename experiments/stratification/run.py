@@ -26,6 +26,7 @@ with the WOA standard error of the mean where it is available.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -205,7 +206,7 @@ def main() -> int:
     keep = (z_mid >= 100.0) & (z_mid <= seafloor + 100.0)
     payload = {
         "_description": "Ambient buoyancy frequency at the NESCA site from WOA23.",
-        "_generated": "2026-09-16",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/stratification/run.py",
         "_git_commit": git_hash(),
         "site": SITE,

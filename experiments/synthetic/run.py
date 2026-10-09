@@ -12,6 +12,7 @@ here.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -121,7 +122,7 @@ def main() -> int:
     rng = np.random.default_rng(SEED)
     res = {
         "_description": "Synthetic inversions on the real NESCA geometry.",
-        "_generated": "2026-09-17",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/synthetic/run.py",
         "_git_commit": git_hash(),
         "setup": {

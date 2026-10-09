@@ -15,6 +15,7 @@ and serves as the check.
 
 from __future__ import annotations
 
+import datetime
 import importlib.util
 import json
 import pathlib
@@ -126,7 +127,7 @@ def main() -> int:
             "experiments/source_discrimination/run.py, whose blocky "
             "evidences the blocky row reproduces."
         ),
-        "_generated": "2026-09-23",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/source_evidence_shape/run.py",
         "_git_commit": git,
         "by_shape": dict(zip(SHAPES, rows, strict=True)),

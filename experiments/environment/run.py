@@ -5,6 +5,7 @@ Writes ``results/environment.json``.  Re-run after any change to the env.
 
 from __future__ import annotations
 
+import datetime
 import importlib
 import json
 import pathlib
@@ -54,7 +55,7 @@ def main() -> int:
     dirty = bool(sh("git status --porcelain"))
     payload = {
         "_description": "Frozen record of the environment that produced results/ and figures/.",
-        "_generated": "2026-09-16",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/environment/run.py",
         "_git_commit": commit or "not-a-git-repository",
         "_git_dirty": dirty,

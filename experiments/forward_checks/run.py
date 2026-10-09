@@ -7,6 +7,7 @@ anything; it evaluates the model at known parameters and records the outcome.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -60,7 +61,7 @@ def main() -> int:
     n_pf = 1.0e-3
     res: dict = {
         "_description": "Forward-model acceptance checks.",
-        "_generated": "2026-09-16",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/forward_checks/run.py",
         "_git_commit": git_hash(),
         "_stratification_source": n_src,

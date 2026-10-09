@@ -27,6 +27,7 @@ What is new
 
 from __future__ import annotations
 
+import datetime
 import importlib.util
 import json
 import pathlib
@@ -169,7 +170,7 @@ def main() -> int:
             "(radius, settling speed), model resolution, and the "
             "signal-to-noise mode count against noise and data volume."
         ),
-        "_generated": "2026-09-23",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/modes/run.py",
         "_git_commit": git_hash(),
         "_data": df.attrs["source"],

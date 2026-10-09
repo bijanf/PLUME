@@ -17,6 +17,7 @@ Q and Phi consequences are reported for each shape hypothesis separately.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -156,7 +157,7 @@ def main() -> int:
             "Steady single-class reproduction of the benchmark "
             "(the gate before the unsteady inversion)."
         ),
-        "_generated": "2026-09-17",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/nesca/run.py",
         "_git_commit": git_hash(),
         "_data": df.attrs["source"],
@@ -254,7 +255,7 @@ def main() -> int:
 
     unsteady = {
         "_description": "Polydisperse nu(Q) inversion of the NESCA deposit.",
-        "_generated": "2026-09-17",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/nesca/run.py",
         "_git_commit": git_hash(),
         "shape_used": shape,

@@ -3,7 +3,8 @@
 PYTHON ?= python
 
 # Each experiment reads only the results/ files written by those listed before it.
-EXPERIMENTS := stratification constants environment forward_checks identifiability \
+# The environment is recorded first, while the working tree is still clean.
+EXPERIMENTS := environment stratification constants forward_checks identifiability \
                nesca clast_shape vent_shape heat_budget source_discrimination \
                heat_context kernel_maps modes nesca_maps shape_sensitivity \
                shape_space source_evidence_shape synthetic vent_misfit

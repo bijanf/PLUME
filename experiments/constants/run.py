@@ -6,6 +6,7 @@ reach the results manifest by the same route as computed numbers.
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -62,7 +63,7 @@ def main() -> int:
     res = {
         "_description": "Model constants from src/plume_inv, exported for the manifest.",
         "barreyre_check": bar,
-        "_generated": "2026-09-23",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/constants/run.py",
         "_git_commit": subprocess.run(
             ["git", "-C", str(ROOT), "rev-parse", "HEAD"], capture_output=True, text=True

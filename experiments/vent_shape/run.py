@@ -18,6 +18,7 @@ Two things a fixed-vent, fixed-shape inversion leaves open:
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -180,7 +181,7 @@ def main() -> int:
         "_description": (
             "Vent position sampled as a parameter, and a heat flux marginalised over clast shape."
         ),
-        "_generated": "2026-09-17",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/vent_shape/run.py",
         "_git_commit": git_hash(),
         "vent_prior": {

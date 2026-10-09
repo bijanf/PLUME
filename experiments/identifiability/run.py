@@ -20,6 +20,7 @@ fix the geometry; the benchmark reproduction with uncertainty is in
 
 from __future__ import annotations
 
+import datetime
 import json
 import pathlib
 import subprocess
@@ -193,7 +194,7 @@ def main() -> int:
     df = load_nesca()
     res: dict = {
         "_description": "Identifiability of the NESCA tephra deposit.",
-        "_generated": "2026-09-16",
+        "_generated": datetime.date.today().isoformat(),
         "_script": "experiments/identifiability/run.py",
         "_git_commit": git_hash(),
         "_data": df.attrs["source"],
