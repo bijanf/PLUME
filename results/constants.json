@@ -1,0 +1,58 @@
+{
+  "_description": "Model constants from src/plume_inv, exported for the manifest.",
+  "barreyre_check": {
+    "quoted_m_s_at_1mm": {
+      "blocky": 0.12,
+      "long": 0.08,
+      "sheet": 0.04
+    },
+    "fresh_water": {
+      "rho_w": 1000.0,
+      "nu": 1.05e-06
+    },
+    "rho_s_test_kgm3": 2700.0,
+    "w_fresh_2700_m_s": {
+      "blocky": 0.09346632935564131,
+      "long": 0.06742001213175189,
+      "sheet": 0.036026863345449835
+    },
+    "w_seawater_2700_m_s": {
+      "blocky": 0.08605367315483337,
+      "long": 0.061533714056978744,
+      "sheet": 0.033934149823015354
+    },
+    "rho_s_to_reproduce_quoted_fresh_kgm3": {
+      "blocky": 3674.639844835249,
+      "long": 3306.1825238312867,
+      "sheet": 3068.124804815117
+    }
+  },
+  "_generated": "2026-09-23",
+  "_script": "experiments/constants/run.py",
+  "_git_commit": "5bf28a361b88594c8e5c72044cf2d9a884fd8a3e",
+  "rho_tephra_kgm3": 2600.0,
+  "nu_seawater_m2s": 1.6e-06,
+  "rho_seawater_kgm3": 1027.0,
+  "c_p_seawater_J_kg_K": 4200.0,
+  "alpha_thermal_expansion_K": 0.00021,
+  "g_m_s2": 9.81,
+  "epsilon_entrainment": 0.1,
+  "lambda_front": 0.2,
+  "c_q_point_closure": 3.52,
+  "c_f_point_closure": 0.187,
+  "c_f_planar_closure": 0.326,
+  "megaplume_heat_J": [
+    1e+16,
+    1e+17
+  ],
+  "mtt_point_zmax_coefficient": 1.3661222,
+  "mtt_point_zneutral_coefficient": 1.0377636,
+  "mtt_planar_zmax_coefficient": 1.6609899,
+  "rise_height_buoyancy_flux_m4s3": 600.0,
+  "_sources": {
+    "rho_tephra_kgm3": "src/plume_inv/constants.py RHO_TEPHRA",
+    "nu_seawater_m2s": "src/plume_inv/constants.py NU_SEAWATER",
+    "mtt_*_coefficient": "src/plume_inv/stem.py C_ZMAX_POINT, C_ZNEUTRAL_POINT, C_ZMAX_PLANAR, verified in tests/test_stem.py",
+    "rise_height_buoyancy_flux_m4s3": "results/stratification.json#rise_height_consistency.f0_benchmark_m^4s^-3"
+  }
+}

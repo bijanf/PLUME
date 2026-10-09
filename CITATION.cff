@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper listed under preferred-citation."
+type: software
+title: "PLUME: unsteady, polydisperse Bayesian inversion of deep-sea tephra deposits"
+abstract: >-
+  Python package and analysis scripts that invert the sieve fractions of a
+  deep-sea tephra deposit for the mass-weighted distribution of umbrella volume
+  flux, convert it to a heat flux, measure how many source modes the deposit
+  resolves, and compare candidate heat sources for megaplumes by Bayesian
+  evidence. Applied to the NESCA push cores of Clague, Paduan and Davis (2009).
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/bijanf/PLUME"
+keywords:
+  - megaplume
+  - hydrothermal plume
+  - tephra
+  - Bayesian inversion
+  - submarine eruption
+authors:
+  - family-names: Rostami
+    given-names: Masoud
+    affiliation: "China University of Petroleum (East China)"
+  - family-names: Fallah
+    given-names: Bijan
+    affiliation: "Potsdam Institute for Climate Impact Research"
+preferred-citation:
+  type: article
+  title: "Plume flux and the resolvable features of megaplumes triggered in the deep sea"
+  authors:
+    - family-names: Rostami
+      given-names: Masoud
+      affiliation: "China University of Petroleum (East China)"
+    - family-names: Fallah
+      given-names: Bijan
+      affiliation: "Potsdam Institute for Climate Impact Research"
+    - family-names: Hou
+      given-names: Wanting
+      affiliation: "Chengdu University of Technology"
+    - family-names: Fu
+      given-names: Li-Yun
+      affiliation: "China University of Petroleum (East China)"
+  status: submitted
+  year: 2026

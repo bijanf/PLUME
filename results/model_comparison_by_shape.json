@@ -1,0 +1,329 @@
+{
+  "_description": "Bayesian evidence of the four megaplume source mechanisms under the blocky, long and sheet settling laws, with the prior-width sweep (0.5x, 1x, 2x) for every mechanism. Same priors, likelihood, sampler and seed as experiments/source_discrimination/run.py, whose blocky evidences the blocky row reproduces.",
+  "_generated": "2026-09-23",
+  "_script": "experiments/source_evidence_shape/run.py",
+  "_git_commit": "66df67d92658c6d092ef3733ced85d2812a215a9",
+  "by_shape": {
+    "blocky": {
+      "w_s_m s^-1": [
+        0.0033954034821618104,
+        0.011169468130433567,
+        0.03007959503276518,
+        0.06252985953254946
+      ],
+      "evidence": {
+        "lava_cooling": {
+          "nominal": {
+            "logz": -1048.8887115352336,
+            "logz_err": 0.7060465432566776
+          },
+          "half_width": {
+            "logz": -10425.533303549239,
+            "logz_err": 0.8814217512625331
+          },
+          "double_width": {
+            "logz": -712.3671722487824,
+            "logz_err": 0.6241853576934006
+          }
+        },
+        "dyke_heating": {
+          "nominal": {
+            "logz": -710.617412688832,
+            "logz_err": 0.6002377974739845
+          },
+          "half_width": {
+            "logz": -856.4195221712945,
+            "logz_err": 0.7312056961533332
+          },
+          "double_width": {
+            "logz": -711.6866990358698,
+            "logz_err": 0.6015369332280878
+          }
+        },
+        "volatile_exsolution": {
+          "nominal": {
+            "logz": -716.3154836416967,
+            "logz_err": 0.6411516743382077
+          },
+          "half_width": {
+            "logz": -7953.344184084062,
+            "logz_err": 0.8959346852704515
+          },
+          "double_width": {
+            "logz": -716.1263474071419,
+            "logz_err": 0.6247734459151564
+          }
+        },
+        "hydrothermal_evacuation": {
+          "nominal": {
+            "logz": -712.1529759417912,
+            "logz_err": 0.6241376119767977
+          },
+          "half_width": {
+            "logz": -714.1623144414651,
+            "logz_err": 0.5869073214869779
+          },
+          "double_width": {
+            "logz": -713.8534496438185,
+            "logz_err": 0.6655860631239627
+          }
+        }
+      },
+      "bayes_factors": {
+        "lava_cooling": {
+          "log10B_vs_dyke": -146.90935847523804,
+          "log10B_range_over_prior_widths": [
+            -4155.813311956801,
+            -0.29552576145091974
+          ],
+          "own_prior_swing_log10": 4218.374452633345
+        },
+        "dyke_heating": {
+          "log10B_vs_dyke": 0.0,
+          "log10B_range_over_prior_widths": [
+            0.0,
+            0.0
+          ],
+          "own_prior_swing_log10": 63.32105159808723
+        },
+        "volatile_exsolution": {
+          "log10B_vs_dyke": -2.4746407723223296,
+          "log10B_range_over_prior_widths": [
+            -3082.155219151816,
+            -1.9281147892342505
+          ],
+          "own_prior_swing_log10": 3143.0837708005756
+        },
+        "hydrothermal_evacuation": {
+          "log10B_vs_dyke": -0.6668866473735662,
+          "log10B_range_over_prior_widths": [
+            -0.9410078326926611,
+            61.78152032802951
+          ],
+          "own_prior_swing_log10": 0.8726446226841592
+        }
+      },
+      "reference": "dyke_heating"
+    },
+    "long": {
+      "w_s_m s^-1": [
+        0.002170390680273826,
+        0.007302765793807205,
+        0.020404643409292426,
+        0.044053818122570504
+      ],
+      "evidence": {
+        "lava_cooling": {
+          "nominal": {
+            "logz": -920.0538245873867,
+            "logz_err": 0.6744098646164547
+          },
+          "half_width": {
+            "logz": -4748.403674465902,
+            "logz_err": 0.8155656502619663
+          },
+          "double_width": {
+            "logz": -709.8804519549413,
+            "logz_err": 0.6034208372656376
+          }
+        },
+        "dyke_heating": {
+          "nominal": {
+            "logz": -709.0522373530556,
+            "logz_err": 0.5556701842392798
+          },
+          "half_width": {
+            "logz": -769.7601541394663,
+            "logz_err": 0.7109573534862301
+          },
+          "double_width": {
+            "logz": -710.5588730160722,
+            "logz_err": 0.5970934546879068
+          }
+        },
+        "volatile_exsolution": {
+          "nominal": {
+            "logz": -714.156936672147,
+            "logz_err": 0.6252196523341369
+          },
+          "half_width": {
+            "logz": -3351.970844138486,
+            "logz_err": 0.9616453105903165
+          },
+          "double_width": {
+            "logz": -714.2555327928367,
+            "logz_err": 0.6165480051491854
+          }
+        },
+        "hydrothermal_evacuation": {
+          "nominal": {
+            "logz": -711.1217667611605,
+            "logz_err": 0.636332697327131
+          },
+          "half_width": {
+            "logz": -711.703693355366,
+            "logz_err": 0.5893296485772179
+          },
+          "double_width": {
+            "logz": -714.2664220695466,
+            "logz_err": 0.6776062057263239
+          }
+        }
+      },
+      "bayes_factors": {
+        "lava_cooling": {
+          "log10B_vs_dyke": -91.63682500869758,
+          "log10B_range_over_prior_widths": [
+            -1727.9029263378995,
+            0.294634523256076
+          ],
+          "own_prior_swing_log10": 1753.9083505746487
+        },
+        "dyke_heating": {
+          "log10B_vs_dyke": 0.0,
+          "log10B_range_over_prior_widths": [
+            0.0,
+            0.0
+          ],
+          "own_prior_swing_log10": 26.365113268179954
+        },
+        "volatile_exsolution": {
+          "log10B_vs_dyke": -2.216942746056692,
+          "log10B_range_over_prior_widths": [
+            -1121.4398537781624,
+            -1.605438942522519
+          ],
+          "own_prior_swing_log10": 1145.588024300286
+        },
+        "hydrothermal_evacuation": {
+          "log10B_vs_dyke": -0.8987852020764726,
+          "log10B_range_over_prior_widths": [
+            -1.6101680953095538,
+            25.213600557367293
+          ],
+          "own_prior_swing_log10": 1.365706447919836
+        }
+      },
+      "reference": "dyke_heating"
+    },
+    "sheet": {
+      "w_s_m s^-1": [
+        0.0019539823510612165,
+        0.005860978592160147,
+        0.013849516250613661,
+        0.025676602992269027
+      ],
+      "evidence": {
+        "lava_cooling": {
+          "nominal": {
+            "logz": -821.2291459404037,
+            "logz_err": 0.689403737290301
+          },
+          "half_width": {
+            "logz": -1824.9946613285824,
+            "logz_err": 0.7688734521643315
+          },
+          "double_width": {
+            "logz": -712.3865208852181,
+            "logz_err": 0.6363088930798992
+          }
+        },
+        "dyke_heating": {
+          "nominal": {
+            "logz": -713.099524775143,
+            "logz_err": 0.6028233737154801
+          },
+          "half_width": {
+            "logz": -721.2471663427275,
+            "logz_err": 0.5910649074894799
+          },
+          "double_width": {
+            "logz": -714.1359669304193,
+            "logz_err": 0.600270052825595
+          }
+        },
+        "volatile_exsolution": {
+          "nominal": {
+            "logz": -714.5271031923648,
+            "logz_err": 0.6453937115644709
+          },
+          "half_width": {
+            "logz": -1265.7754026170592,
+            "logz_err": 0.7909568077335629
+          },
+          "double_width": {
+            "logz": -715.5096181352569,
+            "logz_err": 0.6539801978958207
+          }
+        },
+        "hydrothermal_evacuation": {
+          "nominal": {
+            "logz": -711.7293033841801,
+            "logz_err": 0.6271554196470583
+          },
+          "half_width": {
+            "logz": -714.2250935488521,
+            "logz_err": 0.6427632391803051
+          },
+          "double_width": {
+            "logz": -714.6429194082622,
+            "logz_err": 0.6752230338114211
+          }
+        }
+      },
+      "bayes_factors": {
+        "lava_cooling": {
+          "log10B_vs_dyke": -46.96009780236178,
+          "log10B_range_over_prior_widths": [
+            -479.35144648689385,
+            0.7597747638183155
+          ],
+          "own_prior_swing_log10": 483.19957591519136
+        },
+        "dyke_heating": {
+          "log10B_vs_dyke": 0.0,
+          "log10B_range_over_prior_widths": [
+            0.0,
+            0.0
+          ],
+          "own_prior_swing_log10": 3.538475773327515
+        },
+        "volatile_exsolution": {
+          "log10B_vs_dyke": -0.6199894290836346,
+          "log10B_range_over_prior_widths": [
+            -236.48560825445236,
+            -0.5965691383207415
+          ],
+          "own_prior_swing_log10": 239.40409459869622
+        },
+        "hydrothermal_evacuation": {
+          "log10B_vs_dyke": 0.5950795890809903,
+          "log10B_range_over_prior_widths": [
+            -0.22016666371435256,
+            3.0496474659030346
+          ],
+          "own_prior_swing_log10": 1.2653673616437493
+        }
+      },
+      "reference": "dyke_heating"
+    }
+  },
+  "blocky_reproduction_check": {
+    "lava_cooling": {
+      "original_logz": -1048.8887115352336,
+      "rerun_logz": -1048.8887115352336
+    },
+    "dyke_heating": {
+      "original_logz": -710.617412688832,
+      "rerun_logz": -710.617412688832
+    },
+    "volatile_exsolution": {
+      "original_logz": -716.3154836416967,
+      "rerun_logz": -716.3154836416967
+    },
+    "hydrothermal_evacuation": {
+      "original_logz": -712.1529759417912,
+      "rerun_logz": -712.1529759417912
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "_description": "Heat flux at the blocky posterior median <Q> under alternative closures and settings, the in-situ thermal expansion, and the drift of each fraction per cm/s of ambient current.",
+  "_generated": "2026-09-23",
+  "_script": "experiments/heat_budget/run.py",
+  "_git_commit": "5bf28a361b88594c8e5c72044cf2d9a884fd8a3e",
+  "q_mass_weighted_mean_m3s": 1031923.7737488633,
+  "phi_reference_W": 1615202002507.545,
+  "phi_reference_matches_posterior_median_rel": 2.4873236803557575e-10,
+  "closure_level": {
+    "c_q_top_of_rise": 3.5204075555061007,
+    "c_q_neutral_level": 2.4893040551285774,
+    "phi_neutral_level_W": 2560243717124.374,
+    "ratio_neutral_to_top": 1.5850919656796392
+  },
+  "n_bands": {
+    "500m": {
+      "N_s^-1": 0.0009108564137567169,
+      "phi_W": 1622008267852.4148,
+      "ratio_to_reference": 1.0042138787187629
+    },
+    "1000m": {
+      "N_s^-1": 0.0009085612058950424,
+      "phi_W": 1615202002507.545,
+      "ratio_to_reference": 1.0
+    },
+    "1500m": {
+      "N_s^-1": 0.0011460798938708527,
+      "phi_W": 2378636168943.3105,
+      "ratio_to_reference": 1.4726555348808141
+    },
+    "2000m": {
+      "N_s^-1": 0.0014390377907778382,
+      "phi_W": 3476083452662.246,
+      "ratio_to_reference": 2.152104471927194
+    },
+    "3000m": {
+      "N_s^-1": 0.0024854262217109072,
+      "phi_W": 8642472153433.748,
+      "ratio_to_reference": 5.3507066856136944
+    }
+  },
+  "point_source_measured_profile": {
+    "reproduces_stratification_rise_m": [
+      2515.726667263123,
+      2515.7267426271023
+    ],
+    "f0_m4s3": 3312.128626290175,
+    "phi_W": 6934874819979.632,
+    "ratio_to_reference": 4.293503109340801,
+    "z_max_m": 3097.664264510132,
+    "z_neutral_m": 2542.8392469786227
+  },
+  "line_source_uniform_N": {
+    "2km": {
+      "phi_W": 1385596395388.733,
+      "ratio_to_reference": 0.8578471257698064,
+      "rise_height_m": 2724.193223102259
+    },
+    "5km": {
+      "phi_W": 876328105429.5245,
+      "ratio_to_reference": 0.5425501603323025,
+      "rise_height_m": 1722.9310742796733
+    },
+    "10km": {
+      "phi_W": 619657545893.5765,
+      "ratio_to_reference": 0.38364089750481967,
+      "rise_height_m": 1218.2962461401803
+    }
+  },
+  "transition_length_m": 1452.8442680911671,
+  "thermal_expansion": {
+    "adopted_K^-1": 0.00021,
+    "in_situ_mean_K^-1": 0.00014464019757131694,
+    "in_situ_range_K^-1": [
+      0.0001347366371662019,
+      0.00015454787318822599
+    ],
+    "depths_m": [
+      2300.0,
+      2400.0,
+      2500.0,
+      2600.0,
+      2700.0,
+      2800.0,
+      2900.0,
+      3000.0,
+      3100.0,
+      3200.0
+    ],
+    "phi_in_situ_W": 2345077137766.911,
+    "ratio_to_reference": 1.451878547776848
+  },
+  "drift_per_cm_s": {
+    "z_neutral_m": 2020.8197690049553,
+    "by_fraction": {
+      "63-125um": {
+        "w_s_m_s": 0.0033954034821618104,
+        "fall_time_h": 165.32315751947138,
+        "displacement_per_cm_s_m": 5951.633670700971
+      },
+      "125-250um": {
+        "w_s_m_s": 0.011169468130433567,
+        "fall_time_h": 50.256540254957436,
+        "displacement_per_cm_s_m": 1809.235449178468
+      },
+      "250-500um": {
+        "w_s_m_s": 0.03007959503276518,
+        "fall_time_h": 18.661781320930086,
+        "displacement_per_cm_s_m": 671.8241275534832
+      },
+      ">500um": {
+        "w_s_m_s": 0.06252985953254946,
+        "fall_time_h": 8.97713234796886,
+        "displacement_per_cm_s_m": 323.17676452687897
+      }
+    }
+  },
+  "reference_duration": {
+    "value_h": 15.0,
+    "origin": "midpoint of the 10-20 h duration range of the steady inversion (constants.BenchmarkPF2021.duration_range_h)",
+    "range_h": [
+      10.0,
+      20.0
+    ]
+  }
+}

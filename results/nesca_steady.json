@@ -1,0 +1,88 @@
+{
+  "_description": "Steady single-class reproduction of the benchmark (the gate before the unsteady inversion).",
+  "_generated": "2026-09-17",
+  "_script": "experiments/nesca/run.py",
+  "_git_commit": "ada89047eaf8d28478dcf68185067c25b77e93e9",
+  "_data": "Clague, Paduan & Davis (2009) JVGR 180, 171-188, Appendix A (mmc3.xls Sheet1, mmc1.xls LimuSamples); see data/raw/nesca_clague2009/README.rst",
+  "published_benchmark": {
+    "L_m": 4900.0,
+    "L_sigma_m": 400.0,
+    "q_umb": 760000.0,
+    "q_sigma": 360000.0,
+    "phi_W": 1500000000000.0,
+    "phi_sigma_W": 900000000000.0,
+    "w_s": 0.03
+  },
+  "gate_criterion": "|z| < 2 on the DISPERSAL LENGTH SCALE L, which is what the deposit constrains.  Q = w_s L^2 and Phi ~ Q^(4/3) inherit the settling speed, so they are reported per shape hypothesis rather than gated.",
+  "excluded": {
+    "on_flow_cores": 8,
+    "why": "Cores logged 'on flow' or 'on flow lobe' sit on the lava and carry up to 1.2e4 g m^-2, an order of magnitude above the rest; they are plausibly primary lava fragments, not fallout.  Retained as a sensitivity below."
+  },
+  "by_shape": {
+    "blocky": {
+      "centre_xy_m": [
+        0.00136176061630249,
+        -322.16434478759766
+      ],
+      "w_s_m s^-1": 0.03007959503276518,
+      "L_m": 5353.6823746489845,
+      "L_sigma_published_m": 400.0,
+      "L_z_score_vs_published": 1.1342059366224613,
+      "q_umb_m^3s^-1": 862138.7951198564,
+      "q_z_score_vs_published": 0.28371887533293433,
+      "f0_m^4s^-3": 607.0179115058526,
+      "phi_W": 1270963088922.5496,
+      "phi_z_score_vs_published": -0.2544854567527227,
+      "residual_sd_log": 0.8184689673167301,
+      "n_cores": 123
+    },
+    "long": {
+      "centre_xy_m": [
+        0.00136176061630249,
+        -322.16434478759766
+      ],
+      "w_s_m s^-1": 0.020404643409292426,
+      "L_m": 5353.6823746489845,
+      "L_sigma_published_m": 400.0,
+      "L_z_score_vs_published": 1.1342059366224613,
+      "q_umb_m^3s^-1": 584836.1543622988,
+      "q_z_score_vs_published": -0.48656623788250336,
+      "f0_m^4s^-3": 361.80747800063807,
+      "phi_W": 757545932531.4073,
+      "phi_z_score_vs_published": -0.8249489638539919,
+      "residual_sd_log": 0.8184689673167302,
+      "n_cores": 123
+    },
+    "sheet": {
+      "centre_xy_m": [
+        0.00136176061630249,
+        -322.16434478759766
+      ],
+      "w_s_m s^-1": 0.013849516250613661,
+      "L_m": 5353.682374648985,
+      "L_sigma_published_m": 400.0,
+      "L_z_score_vs_published": 1.1342059366224635,
+      "q_umb_m^3s^-1": 396953.6571317093,
+      "q_z_score_vs_published": -1.0084620635230297,
+      "f0_m^4s^-3": 215.81667560248485,
+      "phi_W": 451873039436.80316,
+      "phi_z_score_vs_published": -1.1645855117368853,
+      "residual_sd_log": 0.8184689673167302,
+      "n_cores": 123
+    }
+  },
+  "gate_passed": {
+    "blocky": true,
+    "long": true,
+    "sheet": true
+  },
+  "gate_passed_any": true,
+  "sensitivity_including_on_flow_cores": {
+    "L_m": 5364.342040697817,
+    "centre_xy_m": [
+      206.05192141368394,
+      -308.7394221046751
+    ],
+    "residual_sd_log": 0.8923333907533759
+  }
+}

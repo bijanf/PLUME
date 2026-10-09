@@ -1,0 +1,243 @@
+{
+  "_description": "Forward-model acceptance checks.",
+  "_generated": "2026-09-16",
+  "_script": "experiments/forward_checks/run.py",
+  "_git_commit": "239a20528bece9795b49ef58576935c17d40a763",
+  "_stratification_source": "results/stratification.json#N_primary.value_s^-1",
+  "mtt_closure_verification": {
+    "point_c_q_at_z_max": 3.520407555449104,
+    "point_c_q_at_z_neutral": 2.489304055165812,
+    "point_c_q_published": 3.52,
+    "point_relative_error": 0.00011578279804093498,
+    "planar_c_q_at_z_max": 2.1123070203551744,
+    "planar_c_q_implied_by_published": 2.1111621933981435,
+    "planar_relative_error": 0.0005422733320115799,
+    "z_max_over_scale_point": 1.36612215461532,
+    "z_neutral_over_scale_point": 1.037763602053284,
+    "z_max_over_scale_planar": 3.5784941777076167,
+    "finding": "Direct integration of the MTT equations reproduces both published closure coefficients to better than 0.2 %, and identifies them as the volume flux at the TOP OF RISE, not at the neutral level (where the point-source coefficient is 2.489, not 3.520)."
+  },
+  "benchmark_pf2021": {
+    "inputs": {
+      "q_umb_m^3s^-1": 760000.0,
+      "N_s^-1": 0.001,
+      "epsilon": 0.1,
+      "w_s_m s^-1": 0.03
+    },
+    "L_m": 5033.222956847167,
+    "L_published_m": 4900.0,
+    "L_published_sigma_m": 400.0,
+    "L_published_provenance": "Pegler & Ferguson (2021), Results, 'Dispersal of the Northern Escanaba tephra', and the Fig. 2 caption: L = 4.9 +/- 0.4 km, sigma from bootstrapping 1e4 resampled datasets.  A value of 5.0 km is the back-of-envelope sqrt(7.6e5/0.03), not a published value.",
+    "L_is_not_an_independent_check": "L = sqrt(Q/w) is the algebraic inverse of the relation the benchmark used to turn its fitted L into Q_umb, so recovering 5033 m from Q = 7.6e5 and w = 0.03 tests arithmetic, not science.  The real reproduction test is experiments/nesca: fit L to the published core data and recover 4.9 +/- 0.4 km.  What IS an independent check here is the MTT integration above, which derives the closure coefficients rather than assuming them.",
+    "F0_m^4s^-3": 601.9952477943051,
+    "F0_published_m^4s^-3": 600.0,
+    "heat_flux_W": 1260446726778.2903,
+    "heat_flux_published_W": 1500000000000.0,
+    "heat_flux_constant_W s^3 m^-4": 2093781855.2497451,
+    "mass_fraction_within_L": 0.9567860817362277,
+    "mass_fraction_within_L_as_quoted_by_benchmark": 0.93,
+    "mass_fraction_note": "The exact value for Omega = Omega_0 exp[-pi (r/L)^2] is 1 - exp(-pi) = 0.9568.  The benchmark's ~93 % corresponds to r/L = 0.920; re-check the benchmark's definition of L before quoting either.",
+    "with_woa_stratification": {
+      "N_s^-1": 0.0009085612058950424,
+      "F0_m^4s^-3": 513.0779823596332,
+      "heat_flux_W": 1074273369792.7488
+    }
+  },
+  "kernel_limits": {
+    "gaussian_limit_max_rel_error": 5.400124791776761e-16,
+    "mass_conservation_rel_error": {
+      "constant": 5.6779363564252856e-06,
+      "waning": 5.6585133882761005e-06,
+      "two_pulse": 5.546312569022179e-06
+    }
+  },
+  "theorem1": {
+    "time_reversal_max_rel_difference": 1.6384684644804754e-16,
+    "nonlinear_relabel_max_rel_difference": 1.970365042480404e-06,
+    "nonlinear_relabel_mass_check": {
+      "original_kg": 1000000000.0,
+      "relabelled_kg": 1000000000.0
+    },
+    "block_permutation_max_rel_difference": 9.314669315051764e-06,
+    "per_size_class_max_rel_difference": {
+      "w=0.005": 2.457702696720713e-16,
+      "w=0.012": 2.0480855806005942e-16,
+      "w=0.03": 1.6384684644804754e-16,
+      "w=0.055": 1.7874201430696095e-16,
+      "w=0.08": 1.2288513483603565e-16
+    },
+    "non_degeneracy_check_rel_difference": 0.5119028941610305,
+    "finding": "Deposits from nu-preserving relabelings agree to machine precision in every size class, while a history with a different nu differs by about 50 % of the peak deposit.  The invariance is real and not vacuous."
+  },
+  "unsteady_umbrella": {
+    "pf2021": {
+      "N_s^-1": 0.001,
+      "front_law_max_rel_error": 1.8835133853249392e-11,
+      "front_radius_m": {
+        "1h": 979.7832078024119,
+        "5h": 2864.903479217355,
+        "10h": 4547.750796696984,
+        "20h": 7219.10439876601
+      },
+      "thickness_m": {
+        "1h": 907.206673891122,
+        "5h": 530.537681336547,
+        "10h": 421.0880367312021,
+        "20h": 334.21779623916706
+      }
+    },
+    "woa": {
+      "N_s^-1": 0.0009085612058950424,
+      "front_law_max_rel_error": 1.8862472238840733e-11,
+      "front_radius_m": {
+        "1h": 948.9603240959075,
+        "5h": 2774.7768205166635,
+        "10h": 4404.683643865128,
+        "20h": 6991.999449858626
+      },
+      "thickness_m": {
+        "1h": 967.0971653361279,
+        "5h": 565.5618532036439,
+        "10h": 448.88674036427426,
+        "20h": 356.28164193441256
+      }
+    }
+  },
+  "unsteady_kernel": {
+    "settling_window_over_eruption_duration": 2.5,
+    "settling_residual_tolerance": 1e-05,
+    "mass_conservation_rel_error": 1.7412161345481873e-06,
+    "front_radius_at_end_of_record_m": 9459.70285889159,
+    "front_radius_note": "NOT a maximum: with the source off the box model gives R_f ~ t^(1/3) without bound, so this is the radius at whichever time the record was stopped.  The deposit extent does not measure umbrella volume; the weaker bound V >= pi R^2 h_min does hold.",
+    "umbrella_volume_m^3": 41039999920.32258,
+    "ratio_unsteady_to_quasi_steady": {
+      "1km": 1.1262456882219598,
+      "2km": 1.0344815798046239,
+      "3km": 0.9501827067730901,
+      "4km": 0.8875790210701379,
+      "5km": 0.8450840353978198,
+      "6km": 0.7952526067964052,
+      "7km": 0.5486220970367442,
+      "8km": 0.15666939375356623
+    },
+    "convergence_to_gaussian_long_record_max_rel_error": 0.00047711588401961935,
+    "finding": "At NESCA timescales the front-limited kernel is steeper than the Gaussian: +13 % at 1 km, -84 % at 8 km.  A Gaussian fitted to such a deposit should return a shorter L, hence a smaller Q_umb = w L^2 and a smaller Phi ~ Q^(4/3).  Whether the INVERSION is biased low, and by how much, is measured in experiments/synthetic by fitting the steady model to synthetic front-limited deposits on the real core geometry: the near-field enhancement and the far-field suppression push L in opposite directions, so the sign does not follow from the shape alone and is not asserted here."
+  },
+  "settling_law": {
+    "law": "Ferguson & Church (2004), J. Sediment. Res. 74, 933-937, Eq. (4)",
+    "coefficients": "Barreyre, Soule & Sohn (2011), J. Volcanol. Geotherm. Res. 205, 84-93, Table 2: non-linear maximum-likelihood fit of the same equation to tank measurements of real deep-sea basaltic volcaniclasts from the Gakkel Ridge, by clast shape.  doi:10.1016/j.jvolgeores.2011.05.006.",
+    "shape_coefficients_C1_C2": {
+      "spheres": [
+        18.0,
+        0.4
+      ],
+      "quartz_sand": [
+        24.0,
+        1.2
+      ],
+      "blocky": [
+        19.3,
+        2.0
+      ],
+      "long": [
+        30.7,
+        3.7
+      ],
+      "sheet": [
+        31.1,
+        14.8
+      ]
+    },
+    "rho_tephra_kg m^-3": 2600.0,
+    "nu_seawater_m^2s^-1": 1.6e-06,
+    "w_s_by_fraction_m s^-1": {
+      "63-125um": 0.0033954034821618104,
+      "125-250um": 0.011169468130433567,
+      "250-500um": 0.03007959503276518,
+      "500-1000um": 0.06252985953254946,
+      "1000-2000um": 0.10605092772756405
+    },
+    "w_s_by_shape_and_fraction_m s^-1": {
+      "spheres": {
+        "63-125um": 0.003870022434219213,
+        "125-250um": 0.013895924833154893,
+        "250-500um": 0.043765924794992785,
+        "500-1000um": 0.10932201043446733,
+        "1000-2000um": 0.2120534499416316
+      },
+      "quartz_sand": {
+        "63-125um": 0.002852991780585933,
+        "125-250um": 0.009981156079585916,
+        "250-500um": 0.029885183304509535,
+        "500-1000um": 0.06985637174166587,
+        "1000-2000um": 0.12843778131745942
+      },
+      "blocky": {
+        "63-125um": 0.0033954034821618104,
+        "125-250um": 0.011169468130433567,
+        "250-500um": 0.03007959503276518,
+        "500-1000um": 0.06252985953254946,
+        "1000-2000um": 0.10605092772756405
+      },
+      "long": {
+        "63-125um": 0.002170390680273826,
+        "125-250um": 0.007302765793807205,
+        "250-500um": 0.020404643409292426,
+        "500-1000um": 0.044053818122570504,
+        "1000-2000um": 0.07655619135332666
+      },
+      "sheet": {
+        "63-125um": 0.0019539823510612165,
+        "125-250um": 0.005860978592160147,
+        "250-500um": 0.013849516250613661,
+        "500-1000um": 0.025676602992269027,
+        "1000-2000um": 0.04079744641612542
+      }
+    },
+    "benchmark_fraction_250_500um": {
+      "computed_blocky_m s^-1": 0.03007959503276518,
+      "computed_sheet_m s^-1": 0.013849516250613661,
+      "published_m s^-1": 0.03,
+      "published_sigma_m s^-1": 0.01
+    },
+    "shape_is_first_order": {
+      "w_sheet_over_assumed": 0.46165054168712205,
+      "q_factor": 0.46165054168712205,
+      "phi_factor": 0.35679421099783337,
+      "statement": "The blocky coefficients reproduce the benchmark's assumed 3 cm/s at 250-500 um almost exactly, which independently corroborates it from measurements the benchmark did not use.  But NESCA's tephra is limu o Pele -- bubble-wall fragments, i.e. SHEET clasts; the coordinate workbook is named 'LimuSamples'.  For sheet clasts w is 0.46x the assumed value, so Q = w L^2 falls by 0.46 and Phi ~ Q^(4/3) by 0.36: a factor 2.8 in the headline heat flux, which the benchmark did not propagate."
+    },
+    "shape_is_identifiable_from_the_deposit": {
+      "observable": "L(fine)/L(coarse) = sqrt(w_coarse/w_fine)",
+      "why": "Independent of Q, of total erupted mass and of the eruption history, because L_i^2 = Q/w_i.  It depends only on the settling law, so a polydisperse deposit constrains the clast shape -- and a single-fraction inversion cannot.",
+      "ratio_63_125_to_500_1000_by_shape": {
+        "spheres": 5.31492405898553,
+        "quartz_sand": 4.948262749685983,
+        "blocky": 4.291390462741954,
+        "long": 4.505290706175527,
+        "sheet": 3.6250037878665773
+      }
+    },
+    "sensitivity_rho_tephra": {
+      "2400": 0.027157404670552273,
+      "2600": 0.03007959503276518,
+      "2900": 0.034238052472298997
+    },
+    "sensitivity_viscosity": {
+      "deep_2C_nu_1.6e-6": 0.03007959503276518,
+      "warm_20C_nu_1.05e-6": 0.03624057443691878
+    },
+    "open_discrepancy": "Barreyre et al. quote 12, 8 and 4 cm/s at D = 1 mm for blocky, long and sheet, read off their Fig. 5.  Reproducing those from their own Table 2 coefficients requires rho_s of 3100-3700 kg/m^3, too dense for basaltic glass; at a physical 2700 kg/m^3 this code gives 9.3, 6.7 and 3.6 cm/s.  The paper states neither the clast density nor, unambiguously, the viscosity behind the fit (1.83e-6 m^2/s in one place, 9e-7 in another, neither the standard 1.05e-6 at 20 degC), so their curves cannot be reproduced exactly from the paper alone.  rho_s, C1 and C2 are therefore sampled, not fixed.",
+    "laplace_dynamic_range_gain": {
+      "_definition": "w_max/w_min over the sieve fractions in play.  This is the factor by which polydispersity widens the range of Laplace abscissae pi w r^2 that the data sample; an equivalent widening in radius would be its square root.",
+      "four_nesca_fractions_500_1000um_top": 18.416032103712602,
+      "four_nesca_fractions_500_2000um_top": 24.44781999340546,
+      "_note": "The NESCA top fraction is the OPEN bin '>500 um', so its representative diameter is a modelling choice, not a datum.  Both truncations are reported; the inversion must state which it uses and carry the other as a sensitivity."
+    },
+    "informative_flux_band_m^3s^-1": {
+      "_definition": "Q ~ pi w r^2: the umbrella fluxes the core geometry is sensitive to, using the actual fraction speeds and core radii 0.5-8 km.",
+      "q_min": 2666.7436588831865,
+      "q_max": 12572374.22959738
+    },
+    "finding": "One physical settling law, with coefficients measured on real deep-sea volcaniclasts, reproduces the benchmark's 3 +/- 1 cm/s for the 250-500 um fraction under blocky clasts and supplies the other fractions consistently.  Across the four NESCA fractions the settling speed spans a factor of 22 (top bin truncated at 1 mm), which is the factor by which polydispersity widens the sampled range of the Laplace transform.  Clast shape moves the 250-500 um speed by a factor 2.2 across the measured classes and is identifiable from the deposit itself."
+  }
+}

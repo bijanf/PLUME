@@ -1,0 +1,33 @@
+{
+  "_description": "Frozen record of the environment that produced results/ and figures/.",
+  "_generated": "2026-09-16",
+  "_script": "experiments/environment/run.py",
+  "_git_commit": "fe56ead85712d585149ecae5f1bbbd89d23f4533",
+  "_git_dirty": false,
+  "env_name": "plume",
+  "env_file": "env/environment.yml",
+  "python": "3.12.14",
+  "platform": {
+    "system": "Darwin",
+    "release": "25.6.0",
+    "machine": "x86_64"
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.1",
+    "pandas": "3.0.5",
+    "xarray": "2026.7.0",
+    "netCDF4": "1.7.4",
+    "jax": "0.10.2",
+    "numpyro": "0.21.0",
+    "arviz": "1.3.0",
+    "dynesty": "3.1.0",
+    "pytest": "9.1.1",
+    "gsw": "3.6.23",
+    "yaml": "6.0.3",
+    "xlrd": "2.0.2"
+  },
+  "conda": "2.5.0",
+  "notes": "gsw (TEOS-10) and xlrd were added after the first env build and are in env/environment.yml.  jax runs on CPU; the problem is small enough that no accelerator is needed."
+}

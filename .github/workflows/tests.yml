@@ -1,0 +1,62 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pytest:
+    name: pytest (${{ matrix.os }}, Python ${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ["3.12", "3.13"]
+        include:
+          - os: macos-latest
+            python-version: "3.12"
+    env:
+      # A missing input workbook fails the run instead of skipping its tests.
+      PLUME_REQUIRE_DATA: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install the package with its test dependencies
+        run: python -m pip install -e ".[test]"
+
+      - name: Restore the input workbooks
+        id: data
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: data/raw/nesca_clague2009/*.xls
+          key: nesca-${{ hashFiles('scripts/fetch_data.py') }}
+
+      - name: Fetch and verify the input workbooks
+        if: steps.data.outputs.cache-hit != 'true'
+        run: python scripts/fetch_data.py
+
+      - name: Run the test suite
+        run: python -m pytest --cov --cov-report=term --cov-report=xml
+
+      - name: Write the coverage summary
+        if: always()
+        run: python -m coverage report --format=markdown >> "$GITHUB_STEP_SUMMARY" || true

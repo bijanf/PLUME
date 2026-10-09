@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tooling caches and reports
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Raw input data are fetched by scripts/fetch_data.py, never redistributed.
+data/raw/nesca_clague2009/*.xls
+data/raw/woa/*.nc
+*.part
+
+# Figures are rebuilt by `make figures`.
+figures/*.pdf
+figures/*.png
+
+# Documentation is reStructuredText.
+*.md

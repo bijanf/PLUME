@@ -1,0 +1,139 @@
+{
+  "_description": "Clast shape inferred from the deposit's own length-scale ratios.",
+  "_generated": "2026-09-17",
+  "_script": "experiments/clast_shape/run.py",
+  "_git_commit": "e2a3bba743e4c3b92fe707dde9c4bf306f460e98",
+  "_why_this_works": "L_i^2 = Q/w_i, so L_i/L_j = sqrt(w_j/w_i) is independent of the umbrella flux, the erupted mass and the eruption history.  It depends only on the settling law, so it identifies the clast shape.",
+  "n_cores": 124,
+  "length_scales_m": {
+    "63-125um": 18123.724250602718,
+    "125-250um": 9944.326103913008,
+    "250-500um": 5516.464345160646,
+    ">500um": 4398.11764561479
+  },
+  "length_scale_ci95_m": {
+    "63-125um": [
+      11699.764290536472,
+      55299.350625693085
+    ],
+    "125-250um": [
+      8253.099976876158,
+      12968.267744481895
+    ],
+    "250-500um": [
+      5129.442978919493,
+      5997.695807518696
+    ],
+    ">500um": [
+      4133.540394549764,
+      4695.482062416797
+    ]
+  },
+  "extreme_ratio_observed": 4.120791145428603,
+  "extreme_ratio_ci95": [
+    2.641199137150969,
+    12.470707945494485
+  ],
+  "by_shape": {
+    "spheres": {
+      "w_s_by_fraction_ms": {
+        "63-125um": 0.003870022434219213,
+        "125-250um": 0.013895924833154893,
+        "250-500um": 0.043765924794992785,
+        ">500um": 0.10932201043446733
+      },
+      "implied_q_umb_m3s": 1746606.2747814986,
+      "chi2": 21.343171787352112,
+      "dof": 3,
+      "log_residuals": {
+        "63-125um": -0.15886299219097655,
+        "125-250um": -0.11991499872218814,
+        "250-500um": -0.13555004743827137,
+        ">500um": 0.09561056092910736
+      },
+      "extreme_ratio_predicted": 5.31492405898553,
+      "is_volcaniclast_class": false
+    },
+    "quartz_sand": {
+      "w_s_by_fraction_ms": {
+        "63-125um": 0.002852991780585933,
+        "125-250um": 0.009981156079585916,
+        "250-500um": 0.029885183304509535,
+        ">500um": 0.06985637174166587
+      },
+      "implied_q_umb_m3s": 1150246.794151689,
+      "chi2": 15.239177961629387,
+      "dof": 3,
+      "log_residuals": {
+        "63-125um": -0.10245999325438682,
+        "125-250um": -0.07651429163691503,
+        "250-500um": -0.11744735512245441,
+        ">500um": 0.08053139154971145
+      },
+      "extreme_ratio_predicted": 4.948262749685983,
+      "is_volcaniclast_class": false
+    },
+    "blocky": {
+      "w_s_by_fraction_ms": {
+        "63-125um": 0.0033954034821618104,
+        "125-250um": 0.011169468130433567,
+        "250-500um": 0.03007959503276518,
+        ">500um": 0.06252985953254946
+      },
+      "implied_q_umb_m3s": 1086903.7064748653,
+      "chi2": 7.295821116174565,
+      "dof": 3,
+      "log_residuals": {
+        "63-125um": 0.012888963714418722,
+        "125-250um": 0.008049997385199958,
+        "250-500um": -0.08588349246730065,
+        ">500um": 0.05345459081263293
+      },
+      "extreme_ratio_predicted": 4.291390462741954,
+      "is_volcaniclast_class": true
+    },
+    "long": {
+      "w_s_by_fraction_ms": {
+        "63-125um": 0.002170390680273826,
+        "125-250um": 0.007302765793807205,
+        "250-500um": 0.020404643409292426,
+        ">500um": 0.044053818122570504
+      },
+      "implied_q_umb_m3s": 752379.8098102974,
+      "chi2": 9.441844142419821,
+      "dof": 3,
+      "log_residuals": {
+        "63-125um": -0.026945225081984603,
+        "125-250um": -0.020491907501842377,
+        "250-500um": -0.0960022469269255,
+        ">500um": 0.062262023052721105
+      },
+      "extreme_ratio_predicted": 4.505290706175527,
+      "is_volcaniclast_class": true
+    },
+    "sheet": {
+      "w_s_by_fraction_ms": {
+        "63-125um": 0.0019539823510612165,
+        "125-250um": 0.005860978592160147,
+        "250-500um": 0.013849516250613661,
+        ">500um": 0.025676602992269027
+      },
+      "implied_q_umb_m3s": 471213.03751736885,
+      "chi2": 3.5164580435343535,
+      "dof": 3,
+      "log_residuals": {
+        "63-125um": 0.15450142241984377,
+        "125-250um": 0.1035052898017641,
+        "250-500um": -0.055792860330702077,
+        ">500um": 0.026311585138298454
+      },
+      "extreme_ratio_predicted": 3.6250037878665773,
+      "is_volcaniclast_class": true
+    }
+  },
+  "best_fit_shape": "sheet",
+  "best_fit_volcaniclast_shape": "sheet",
+  "delta_chi2_between_best_two_volcaniclast_shapes": 3.7793630726402117,
+  "discrimination_is_decisive": false,
+  "verdict": "The deposit's length-scale ratios prefer the sheet class of Barreyre et al. (2011) among the volcaniclast shapes (chi2 = 3.52 on 3 degrees of freedom), but the preference is NOT decisive: the next-best shape is only 3.8 in chi2 behind, and the bootstrap interval on the extreme length-scale ratio, [2.64, 12.47] about an observed 4.12, spans every candidate.  The observable is real and independent of the umbrella flux, but this deposit does not exercise it strongly enough to fix the settling law.  The clast-shape factor of 2.8 in heat flux therefore remains an explicit axis of the result rather than something the data resolve.  Caveat in either direction: sieve fractions sort by hydraulic behaviour, so what a deposit reports is an effective shape, not the modal morphology of the glass."
+}

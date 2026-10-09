@@ -1,0 +1,291 @@
+{
+  "_description": "Figure 1e-g: space-time and settling-speed maps of the front-limited deposit at the reference constant-flux case.",
+  "_generated": "2026-09-23",
+  "_script": "experiments/kernel_maps/run.py",
+  "_git_commit": "66df67d92658c6d092ef3733ced85d2812a215a9",
+  "_grids_file": "results/kernel_maps_grids.npz",
+  "parameters": {
+    "q_umb_m^3s^-1": 760000.0,
+    "mass_per_class_kg": 1000000000.0,
+    "duration_s": 54000.0,
+    "N_s^-1": 0.0009085612058950424,
+    "N_source": "results/stratification.json#N_primary.value_s^-1",
+    "lambda_front": 0.2,
+    "shape": "blocky",
+    "mask_floor_kg_m^-2": 0.01,
+    "w_s_by_fraction_m s^-1": {
+      "63-125": 0.0033954034821618104,
+      "125-250": 0.011169468130433567,
+      "250-500": 0.03007959503276518,
+      "500-1000": 0.06252985953254946
+    },
+    "w_grid_m s^-1": [
+      0.001,
+      0.15,
+      64
+    ],
+    "r_grid_map_m": [
+      50.0,
+      9500.0,
+      190
+    ],
+    "r_grid_fine_m": [
+      10.0,
+      9500.0,
+      950
+    ],
+    "n_quad": 4096,
+    "settling_residual": 1e-05
+  },
+  "cored_radii": {
+    "vent_source": "results/vent_shape.json#by_shape.blocky.vent_x_m.median, #by_shape.blocky.vent_y_m.median",
+    "vent_xy_m": [
+      466.8453063964844,
+      -761.49169921875
+    ],
+    "n_cores": 124,
+    "cores": "all cores not logged 'on flow' (the polydisperse set)",
+    "r_min_m": 279.5886361445461,
+    "r_median_m": 2886.343821446604,
+    "r_max_m": 7267.169721634624,
+    "r_p05_m": 1188.7833608485853,
+    "r_p95_m": 6129.046486556565
+  },
+  "front": {
+    "front_radius_at_shutoff_m": 5771.7683769340265,
+    "thickness_at_shutoff_m": 392.1386870782126,
+    "t_reaches_r_min_h": 0.15992202923829799,
+    "t_reaches_r_median_h": 5.304567951608149,
+    "t_reaches_r_max_h": 22.470299547022794,
+    "t_reaches_r_max_over_duration": 1.4980199698015195,
+    "crossing_time_r_min_to_r_max_h": 22.3103775177845,
+    "crossing_time_over_duration": 1.4873585011856332
+  },
+  "deposition_timing": {
+    "63-125": {
+      "w_s_m s^-1": 0.0033954034821618104,
+      "settling_window_over_duration": 7.62939453125,
+      "fraction_on_seafloor_at_shutoff": 0.17705705796771365,
+      "fraction_on_seafloor_when_front_reaches_r_max": 0.3925347564051661,
+      "fraction_on_seafloor_when_front_reaches_r_median": 0.017169569173515455,
+      "t_half_of_class_mass_on_seafloor_h": 26.120791565299946,
+      "t_90pc_of_class_mass_on_seafloor_h": 47.123946110538284,
+      "t_half_local_deposit_h": {
+        "r_min": 16.042664277692598,
+        "r_median": 19.203733858761133,
+        "r_max": 31.726874678956122
+      },
+      "t_half_local_grid_radius_m": {
+        "r_min": 300.0,
+        "r_median": 2900.0,
+        "r_max": 7250.0
+      },
+      "local_deposit_fraction_landing_after_shutoff": {
+        "r_min": 0.5323602761324648,
+        "r_median": 0.6451453777029522,
+        "r_max": 1.0
+      },
+      "check_rate_integral_vs_kernel_max_rel": 0.0008351627835316844,
+      "check_area_integral_at_shutoff_vs_bookkeeping": {
+        "area_integral_fraction": 0.17735235256472937,
+        "bookkeeping_fraction": 0.17705705796771365
+      }
+    },
+    "125-250": {
+      "w_s_m s^-1": 0.011169468130433567,
+      "settling_window_over_duration": 3.90625,
+      "fraction_on_seafloor_at_shutoff": 0.4506038086519039,
+      "fraction_on_seafloor_when_front_reaches_r_max": 0.7976237997618385,
+      "fraction_on_seafloor_when_front_reaches_r_median": 0.05262476206281217,
+      "t_half_of_class_mass_on_seafloor_h": 15.884449564223386,
+      "t_90pc_of_class_mass_on_seafloor_h": 26.46187418045839,
+      "t_half_local_deposit_h": {
+        "r_min": 10.997317833210158,
+        "r_median": 13.8233588787288,
+        "r_max": 26.12541679329954
+      },
+      "t_half_local_grid_radius_m": {
+        "r_min": 300.0,
+        "r_median": 2900.0,
+        "r_max": 7250.0
+      },
+      "local_deposit_fraction_landing_after_shutoff": {
+        "r_min": 0.31498012217521587,
+        "r_median": 0.4321469041425917,
+        "r_max": 1.0
+      },
+      "check_rate_integral_vs_kernel_max_rel": 0.0012338069709714183,
+      "check_area_integral_at_shutoff_vs_bookkeeping": {
+        "area_integral_fraction": 0.45061385641994073,
+        "bookkeeping_fraction": 0.4506038086519039
+      }
+    },
+    "250-500": {
+      "w_s_m s^-1": 0.03007959503276518,
+      "settling_window_over_duration": 2.5,
+      "fraction_on_seafloor_at_shutoff": 0.740758427046496,
+      "fraction_on_seafloor_when_front_reaches_r_max": 0.9823935783846314,
+      "fraction_on_seafloor_when_front_reaches_r_median": 0.12051023311064499,
+      "t_half_of_class_mass_on_seafloor_h": 11.59455560247393,
+      "t_90pc_of_class_mass_on_seafloor_h": 18.052166177199002,
+      "t_half_local_deposit_h": {
+        "r_min": 9.0819929064355,
+        "r_median": 11.679263772468493,
+        "r_max": 23.978852535231493
+      },
+      "t_half_local_grid_radius_m": {
+        "r_min": 300.0,
+        "r_median": 2900.0,
+        "r_max": 7250.0
+      },
+      "local_deposit_fraction_landing_after_shutoff": {
+        "r_min": 0.16769819445842982,
+        "r_median": 0.255383429030264,
+        "r_max": 1.0
+      },
+      "check_rate_integral_vs_kernel_max_rel": 0.0017135684880300595,
+      "check_area_integral_at_shutoff_vs_bookkeeping": {
+        "area_integral_fraction": 0.7405827168404481,
+        "bookkeeping_fraction": 0.740758427046496
+      }
+    },
+    "500-1000": {
+      "w_s_m s^-1": 0.06252985953254946,
+      "settling_window_over_duration": 2.0,
+      "fraction_on_seafloor_at_shutoff": 0.8781239837034182,
+      "fraction_on_seafloor_when_front_reaches_r_max": 0.9995452264490444,
+      "fraction_on_seafloor_when_front_reaches_r_median": 0.19550362854021294,
+      "t_half_of_class_mass_on_seafloor_h": 9.67012643273693,
+      "t_90pc_of_class_mass_on_seafloor_h": 15.33953100467212,
+      "t_half_local_deposit_h": {
+        "r_min": 8.367107155150414,
+        "r_median": 10.653984769359704,
+        "r_max": 23.185542973990728
+      },
+      "t_half_local_grid_radius_m": {
+        "r_min": 300.0,
+        "r_median": 2900.0,
+        "r_max": 7250.0
+      },
+      "local_deposit_fraction_landing_after_shutoff": {
+        "r_min": 0.09511504683503735,
+        "r_median": 0.1504727412337069,
+        "r_max": 1.0
+      },
+      "check_rate_integral_vs_kernel_max_rel": 0.0014752442125893772,
+      "check_area_integral_at_shutoff_vs_bookkeeping": {
+        "area_integral_fraction": 0.8775384974817959,
+        "bookkeeping_fraction": 0.8781239837034182
+      }
+    }
+  },
+  "ratio_map": {
+    "per_fraction": {
+      "63-125": {
+        "w_s_m s^-1": 0.0033954034821618104,
+        "gaussian_length_L_m": 14961.016478574858,
+        "ratio_one_crossings_m": [
+          7569.15806410941
+        ],
+        "ratio_one_crossings_over_L": [
+          0.5059253878203351
+        ],
+        "mask_edge_m": 9500.0,
+        "ratio_at_r_min": 2.113917280769602,
+        "ratio_at_r_max": 1.090151329440848,
+        "ratio_min_in_cored_annulus": 1.092204777505501,
+        "ratio_max_in_cored_annulus": 2.113895451773349,
+        "ratio_at_1km": 2.058840178755298,
+        "ratio_at_8km": 0.8608794504067894,
+        "front_limited_deposit_at_r_max_kg_m^-2": 2.320860834838351,
+        "quasi_steady_deposit_at_r_max_kg_m^-2": 2.12893223880925
+      },
+      "125-250": {
+        "w_s_m s^-1": 0.011169468130433567,
+        "gaussian_length_L_m": 8248.79573861523,
+        "ratio_one_crossings_m": [
+          4394.509294290231
+        ],
+        "ratio_one_crossings_over_L": [
+          0.5327455586902388
+        ],
+        "mask_edge_m": 9500.0,
+        "ratio_at_r_min": 1.443570336181885,
+        "ratio_at_r_max": 0.508179906899306,
+        "ratio_min_in_cored_annulus": 0.5102954495476135,
+        "ratio_max_in_cored_annulus": 1.4435483630920893,
+        "ratio_at_1km": 1.3884238963990048,
+        "ratio_at_8km": 0.2906719969715483,
+        "front_limited_deposit_at_r_max_kg_m^-2": 0.6520356223278111,
+        "quasi_steady_deposit_at_r_max_kg_m^-2": 1.2830701334019539
+      },
+      "250-500": {
+        "w_s_m s^-1": 0.03007959503276518,
+        "gaussian_length_L_m": 5026.559221489073,
+        "ratio_one_crossings_m": [
+          2401.6031285451677
+        ],
+        "ratio_one_crossings_over_L": [
+          0.47778271830123076
+        ],
+        "mask_edge_m": 8160.0,
+        "ratio_at_r_min": 1.1884400535955628,
+        "ratio_at_r_max": 0.3408802321433674,
+        "ratio_min_in_cored_annulus": 0.34384121798937567,
+        "ratio_max_in_cored_annulus": 1.1884178341656126,
+        "ratio_at_1km": 1.133653598821455,
+        "ratio_at_8km": 0.09786214397011957,
+        "front_limited_deposit_at_r_max_kg_m^-2": 0.018978673579742353,
+        "quasi_steady_deposit_at_r_max_kg_m^-2": 0.05567300647167733
+      },
+      "500-1000": {
+        "w_s_m s^-1": 0.06252985953254946,
+        "gaussian_length_L_m": 3486.2864632027963,
+        "ratio_one_crossings_m": [
+          1498.4110204778449,
+          4009.566638280574
+        ],
+        "ratio_one_crossings_over_L": [
+          0.42980146247112416,
+          1.1500967234336354
+        ],
+        "mask_edge_m": 5900.0,
+        "ratio_at_r_min": 1.0932778979008086,
+        "ratio_at_r_max": null,
+        "ratio_min_in_cored_annulus": 0.9385334552468007,
+        "ratio_max_in_cored_annulus": 1.3510126521894081,
+        "ratio_at_1km": 1.040457379611563,
+        "ratio_at_8km": null,
+        "front_limited_deposit_at_r_max_kg_m^-2": 3.7818250651615196e-05,
+        "quasi_steady_deposit_at_r_max_kg_m^-2": 9.703275049245376e-05
+      }
+    },
+    "ratio_min_in_map": 0.0026155970714961084,
+    "ratio_max_in_map": 3.6365045721839824,
+    "fraction_of_unmasked_map_below_one": 0.3805065097199929,
+    "first_crossing_m_at_w_min": null,
+    "first_crossing_m_at_w_max": 837.1951525463179,
+    "first_crossing_over_L_min": 0.3719337068071227,
+    "first_crossing_over_L_max": 0.550643656184759,
+    "w_range_with_crossing_inside_map_m s^-1": [
+      0.001611561139969716,
+      0.15
+    ],
+    "note": "Ratio masked where the quasi-steady deposit is below the floor, as in Figure 1c.  Crossings listed from the vent outwards."
+  },
+  "reproduction_check": {
+    "against": "results/forward_checks.json#unsteady_kernel.ratio_unsteady_to_quasi_steady",
+    "case": "N = 1e-3 s^-1, w = 0.03 m s^-1, same Q, mass and duration",
+    "ratio_here": {
+      "1km": 1.126245639013563,
+      "2km": 1.0344816159507626,
+      "3km": 0.9501827367120663,
+      "4km": 0.8875791302368073,
+      "5km": 0.8450841213437761,
+      "6km": 0.7952527185347481,
+      "7km": 0.54862227661693,
+      "8km": 0.15666942524378918
+    },
+    "max_abs_rel_difference": 3.273294799654991e-07
+  }
+}

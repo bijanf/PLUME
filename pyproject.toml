@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plume-inv"
+dynamic = ["version"]
+description = "Unsteady, polydisperse Bayesian inversion of deep-sea tephra deposits for the heat flux of megaplumes"
+readme = "README.rst"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+authors = [
+  { name = "Masoud Rostami" },
+  { name = "Bijan Fallah" },
+]
+keywords = [
+  "megaplume",
+  "hydrothermal plume",
+  "tephra",
+  "Bayesian inversion",
+  "inverse problems",
+  "volcanology",
+  "oceanography",
+]
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+# Lower bounds are the versions the reported results were produced with;
+# env/environment.yml pins them exactly.
+dependencies = [
+  "numpy>=2.5",
+  "scipy>=1.18",
+  "pandas>=3.0",
+  "matplotlib>=3.11",
+  "xarray>=2026.7",
+  "netCDF4>=1.7",
+  "jax>=0.10",
+  "numpyro>=0.21",
+  "arviz>=1.3",
+  "dynesty>=3.1",
+  "gsw>=3.6",
+  "xlrd>=2.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=9.1", "pytest-cov>=6", "openpyxl>=3.1"]
+lint = ["ruff==0.16.7"]
+dev = ["plume-inv[test,lint]", "pre-commit>=4"]
+
+[project.urls]
+Repository = "https://github.com/bijanf/PLUME"
+Issues = "https://github.com/bijanf/PLUME/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "plume_inv.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# --------------------------------------------------------------------- pytest
+[tool.pytest.ini_options]
+minversion = "9.0"
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-markers", "--strict-config"]
+xfail_strict = true
+markers = [
+  "nesca_data: reads the Clague, Paduan & Davis (2009) workbooks (fetch with scripts/fetch_data.py)",
+]
+
+# ------------------------------------------------------------------- coverage
+[tool.coverage.run]
+source = ["plume_inv"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+skip_covered = true
+exclude_also = ["if __name__ == .__main__.:"]
+
+# ----------------------------------------------------------------------- ruff
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["plume_inv"]
