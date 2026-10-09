@@ -1,14 +1,14 @@
 {
   "_description": "Source discrimination for the NESCA megaplume.",
-  "_generated": "2026-09-23",
+  "_generated": "2026-10-09",
   "_script": "experiments/source_discrimination/run.py",
-  "_git_commit": "66df67d92658c6d092ef3733ced85d2812a215a9",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "clast_shape_used": "blocky",
   "inferred_phi_W": {
-    "median": 1616408399754.6133,
+    "median": 1615323764375.731,
     "ci95": [
-      1402773084378.2024,
-      1935210066305.4902
+      1398302684203.5862,
+      1935461658756.3005
     ]
   },
   "material_properties_provenance": "Standard basalt/seawater values; the primary sources (Palmer & Ernst 1998, Lowell & Germanovich 1995, Cann & Strens 1989) are not yet obtained, so these ranges are conservative placeholders, not quoted values.",
@@ -88,7 +88,7 @@
       "bound": "area <= 15 km^2 mapped, emplaced as fast as the prior allows (1800 s); volume <= 4.5e7 m^3",
       "limited_by": "RATE -- the heat is there (2.1e17 J) but conduction through a 15 km^2 surface cannot deliver it in hours",
       "can_reach_inferred_phi": false,
-      "peak_over_inferred": 0.6783410267585931,
+      "peak_over_inferred": 0.6787965098591305,
       "supplies_a_megaplume": true,
       "energy_over_megaplume_minimum": 1.0721766694233867
     },
@@ -99,7 +99,7 @@
       "bound": "length <= 30 km, height <= 5 km -- a very large dyke",
       "limited_by": "neither, at the top of its range",
       "can_reach_inferred_phi": true,
-      "peak_over_inferred": 287.8551711921958,
+      "peak_over_inferred": 288.048456222451,
       "supplies_a_megaplume": true,
       "energy_over_megaplume_minimum": 21.54319414760327
     },
@@ -110,7 +110,7 @@
       "bound": "volume <= 4.5e7 m^3, CO2 <= 2 wt % (generous for MORB), released over >= 1800 s",
       "limited_by": "BUDGET -- it can reach the flux if released fast enough, but the total heat available is an order of magnitude below the megaplume range",
       "can_reach_inferred_phi": true,
-      "peak_over_inferred": 2.2410796680776537,
+      "peak_over_inferred": 2.2425844774220702,
       "supplies_a_megaplume": false,
       "energy_over_megaplume_minimum": 0.65205
     },
@@ -122,11 +122,11 @@
       "bound": "k <= 1e-11 m^2, area <= 1e8 m^2, thickness <= 1.6 km, dP <= 30 MPa",
       "limited_by": "neither",
       "can_reach_inferred_phi": true,
-      "peak_over_inferred": 21.24118824686589,
+      "peak_over_inferred": 21.255450987729454,
       "supplies_a_megaplume": true,
       "energy_over_megaplume_minimum": 155.69929300319964
     },
-    "_inferred_phi_W": 1616408399754.6133,
+    "_inferred_phi_W": 1615323764375.731,
     "_megaplume_heat_range_J": [
       1e+16,
       1e+17
@@ -542,7 +542,7 @@
     "by_shape": {
       "blocky": {
         "w_s_m s^-1": 0.03007959503276518,
-        "inferred_phi_W": 1616408399754.6133,
+        "inferred_phi_W": 1615323764375.731,
         "mechanisms_reaching_it": [
           "dyke_heating",
           "hydrothermal_evacuation",
@@ -551,7 +551,7 @@
       },
       "long": {
         "w_s_m s^-1": 0.020404643409292426,
-        "inferred_phi_W": 963445452677.7588,
+        "inferred_phi_W": 962798965673.7589,
         "mechanisms_reaching_it": [
           "dyke_heating",
           "hydrothermal_evacuation",
@@ -561,7 +561,7 @@
       },
       "sheet": {
         "w_s_m s^-1": 0.013849516250613661,
-        "inferred_phi_W": 574691258097.43,
+        "inferred_phi_W": 574305631253.0253,
         "mechanisms_reaching_it": [
           "dyke_heating",
           "hydrothermal_evacuation",
@@ -579,6 +579,16 @@
       "nominal": {
         "logz": -1048.8887115352336,
         "logz_err": 0.7060465432566776,
+        "n_params": 7
+      },
+      "half_width": {
+        "logz": -10425.533303549239,
+        "logz_err": 0.8814217512625331,
+        "n_params": 7
+      },
+      "double_width": {
+        "logz": -712.3671722487824,
+        "logz_err": 0.6241853576934006,
         "n_params": 7
       }
     },
@@ -634,8 +644,8 @@
     },
     "prior_sensitivity_range": {
       "lava_cooling": [
-        -146.90935847523804,
-        -146.90935847523804
+        -4155.813311956801,
+        -0.29552576145091974
       ],
       "dyke_heating": [
         0.0,
@@ -650,6 +660,5 @@
         61.78152032802951
       ]
     }
-  },
-  "_evidence_reused_from": "67d24b097a806c0620483149d90db9b88ab1ce23"
+  }
 }

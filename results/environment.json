@@ -1,8 +1,8 @@
 {
   "_description": "Frozen record of the environment that produced results/ and figures/.",
-  "_generated": "2026-09-16",
+  "_generated": "2026-10-09",
   "_script": "experiments/environment/run.py",
-  "_git_commit": "fe56ead85712d585149ecae5f1bbbd89d23f4533",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "_git_dirty": false,
   "env_name": "plume",
   "env_file": "env/environment.yml",

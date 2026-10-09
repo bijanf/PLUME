@@ -1,42 +1,42 @@
 {
   "_description": "Heat flux at the blocky posterior median <Q> under alternative closures and settings, the in-situ thermal expansion, and the drift of each fraction per cm/s of ambient current.",
-  "_generated": "2026-09-23",
+  "_generated": "2026-10-09",
   "_script": "experiments/heat_budget/run.py",
-  "_git_commit": "5bf28a361b88594c8e5c72044cf2d9a884fd8a3e",
-  "q_mass_weighted_mean_m3s": 1031923.7737488633,
-  "phi_reference_W": 1615202002507.545,
-  "phi_reference_matches_posterior_median_rel": 2.4873236803557575e-10,
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
+  "q_mass_weighted_mean_m3s": 1034665.6363304928,
+  "phi_reference_W": 1620926743135.3362,
+  "phi_reference_matches_posterior_median_rel": 1.0993350674226576e-10,
   "closure_level": {
     "c_q_top_of_rise": 3.5204075555061007,
     "c_q_neutral_level": 2.4893040551285774,
-    "phi_neutral_level_W": 2560243717124.374,
+    "phi_neutral_level_W": 2569317957499.0854,
     "ratio_neutral_to_top": 1.5850919656796392
   },
   "n_bands": {
     "500m": {
       "N_s^-1": 0.0009108564137567169,
-      "phi_W": 1622008267852.4148,
+      "phi_W": 1627757131842.908,
       "ratio_to_reference": 1.0042138787187629
     },
     "1000m": {
       "N_s^-1": 0.0009085612058950424,
-      "phi_W": 1615202002507.545,
+      "phi_W": 1620926743135.3362,
       "ratio_to_reference": 1.0
     },
     "1500m": {
       "N_s^-1": 0.0011460798938708527,
-      "phi_W": 2378636168943.3105,
-      "ratio_to_reference": 1.4726555348808141
+      "phi_W": 2387066739914.584,
+      "ratio_to_reference": 1.472655534880814
     },
     "2000m": {
       "N_s^-1": 0.0014390377907778382,
-      "phi_W": 3476083452662.246,
+      "phi_W": 3488403692567.939,
       "ratio_to_reference": 2.152104471927194
     },
     "3000m": {
       "N_s^-1": 0.0024854262217109072,
-      "phi_W": 8642472153433.748,
-      "ratio_to_reference": 5.3507066856136944
+      "phi_W": 8673103561384.273,
+      "ratio_to_reference": 5.350706685613694
     }
   },
   "point_source_measured_profile": {
@@ -44,30 +44,30 @@
       2515.726667263123,
       2515.7267426271023
     ],
-    "f0_m4s3": 3312.128626290175,
-    "phi_W": 6934874819979.632,
-    "ratio_to_reference": 4.293503109340801,
-    "z_max_m": 3097.664264510132,
-    "z_neutral_m": 2542.8392469786227
+    "f0_m4s3": 3329.5643047233607,
+    "phi_W": 6971381327117.006,
+    "ratio_to_reference": 4.300861440309363,
+    "z_max_m": 3099.0702221323236,
+    "z_neutral_m": 2544.4767502466334
   },
   "line_source_uniform_N": {
     "2km": {
-      "phi_W": 1385596395388.733,
-      "ratio_to_reference": 0.8578471257698064,
-      "rise_height_m": 2724.193223102259
+      "phi_W": 1391122439302.9478,
+      "ratio_to_reference": 0.858226594875052,
+      "rise_height_m": 2727.809967204399
     },
     "5km": {
-      "phi_W": 876328105429.5245,
-      "ratio_to_reference": 0.5425501603323025,
-      "rise_height_m": 1722.9310742796733
+      "phi_W": 879823082473.3308,
+      "ratio_to_reference": 0.5427901576671511,
+      "rise_height_m": 1725.2185040950221
     },
     "10km": {
-      "phi_W": 619657545893.5765,
-      "ratio_to_reference": 0.38364089750481967,
-      "rise_height_m": 1218.2962461401803
+      "phi_W": 622128867861.3433,
+      "ratio_to_reference": 0.3838106012477578,
+      "rise_height_m": 1219.9137032741019
     }
   },
-  "transition_length_m": 1452.8442680911671,
+  "transition_length_m": 1454.1298851525962,
   "thermal_expansion": {
     "adopted_K^-1": 0.00021,
     "in_situ_mean_K^-1": 0.00014464019757131694,
@@ -87,8 +87,8 @@
       3100.0,
       3200.0
     ],
-    "phi_in_situ_W": 2345077137766.911,
-    "ratio_to_reference": 1.451878547776848
+    "phi_in_situ_W": 2353388765875.988,
+    "ratio_to_reference": 1.4518785477768479
   },
   "drift_per_cm_s": {
     "z_neutral_m": 2020.8197690049553,

@@ -1,8 +1,8 @@
 {
   "_description": "Every quotable number for the PLUME paper.",
-  "_generated": "2026-09-23",
+  "_generated": "2026-10-09",
   "_script": "experiments/manifest/run.py",
-  "_git_commit": "5bf28a361b88594c8e5c72044cf2d9a884fd8a3e",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "_rule": "Every number quoted in the paper is read from this file and can be traced by its key.",
   "_environment": {
     "python": "3.12.14",
@@ -58,36 +58,36 @@
   "identify.picard_condition_holds": false,
   "identify.sigma_log_nugget": 0.6956743779947674,
   "identify.front_gain_modes_waning": 3,
-  "synthetic.steady_bias_constant": 0.9909609887418868,
-  "synthetic.steady_bias_waning": 1.0087762876727997,
-  "synthetic.steady_bias_two_pulse": 1.0589270201339873,
-  "synthetic.max_rhat": 1.0061016815829895,
+  "synthetic.steady_bias_constant": 0.9914364486455778,
+  "synthetic.steady_bias_waning": 1.0061823243152894,
+  "synthetic.steady_bias_two_pulse": 1.0484312935306703,
+  "synthetic.max_rhat": 1.006044495843162,
   "sbc.n_replicates": 48,
-  "sbc.mass_p_value": 0.5781890205011004,
-  "sbc.q_mean_p_value": 0.592013074084828,
-  "sbc.log_q_sd_p_value": 0.01687010839604497,
+  "sbc.mass_p_value": 0.7814830779166809,
+  "sbc.q_mean_p_value": 0.3342766405119899,
+  "sbc.log_q_sd_p_value": 0.030286581437779292,
   "sbc.log_q_sd_calibrated": false,
   "nesca.L_fitted_m": 5353.6823746489845,
   "nesca.L_z_score": 1.1342059366224613,
   "nesca.shape_used": "blocky",
-  "nesca.mass_total_kg": 19362592.0,
+  "nesca.mass_total_kg": 19419782.0,
   "nesca.mass_total_ci95_kg": [
-    17660028.0,
-    21347238.0
+    17527548.0,
+    21444424.0
   ],
-  "nesca.q_mean_m3s": 1032501.7790576387,
+  "nesca.q_mean_m3s": 1031982.1167955138,
   "nesca.q_mean_ci95_m3s": [
-    928363.4908584288,
-    1181744.4469763662
+    926143.7024987399,
+    1181859.669038823
   ],
-  "nesca.phi_W": 1616408399754.6133,
+  "nesca.phi_W": 1615323764375.731,
   "nesca.phi_ci95_W": [
-    1402773084378.2024,
-    1935210066305.4902
+    1398302684203.5862,
+    1935461658756.3005
   ],
-  "nesca.log_q_sd": 0.3588566332278465,
-  "nesca.sigma_log": 0.9822220206260681,
-  "nesca.max_rhat": 1.0036557540865565,
+  "nesca.log_q_sd": 0.35971210954357635,
+  "nesca.sigma_log": 0.9818998575210571,
+  "nesca.max_rhat": 1.0024171957958417,
   "nesca.n_divergences": 0,
   "nesca.phi_blocky_W": 1270963088922.5496,
   "nesca.phi_long_W": 757545932531.4073,
@@ -120,40 +120,40 @@
   "sources.observed_megaplume_rise_m": 1000.0,
   "nesca.n_cores_used": 124,
   "vent.prior_scale_m": 1936.4916731037085,
-  "vent.x_median_m": 466.8453063964844,
-  "vent.y_median_m": -761.49169921875,
+  "vent.x_median_m": 467.0166931152344,
+  "vent.y_median_m": -762.3856201171875,
   "vent.x_ci95_m": [
-    247.3358612060547,
-    692.9345092773438
+    248.6209259033203,
+    698.95751953125
   ],
   "vent.y_ci95_m": [
-    -944.9227905273438,
-    -588.76708984375
+    -944.0879516601562,
+    -585.0343017578125
   ],
-  "vent.offset_from_centroid_m": 899.6552734375,
-  "vent.max_rhat": 1.001198649406433,
+  "vent.offset_from_centroid_m": 901.1417236328125,
+  "vent.max_rhat": 1.001201868057251,
   "vent.phi_ci95_sampled_W": [
-    1394495047869.4683,
-    2516101551361.194
+    1391463870036.2256,
+    2556713840571.8203
   ],
   "vent.phi_ci95_profiled_W": [
-    1402773084378.2024,
-    1935210066305.4902
+    1398302684203.5862,
+    1935461658756.3005
   ],
-  "vent.mass_total_kg": 19610150.0,
+  "vent.mass_total_kg": 19609436.0,
   "shape.weight_blocky": 0.12564016672805814,
   "shape.weight_long": 0.04296605943594656,
   "shape.weight_sheet": 0.8313937738359952,
-  "shape.phi_blocky_sampled_W": 1615202002909.2979,
-  "shape.phi_long_sampled_W": 987683597875.123,
-  "shape.phi_sheet_sampled_W": 532900176063.3473,
-  "shape.phi_marginal_W": 542933320472.08374,
+  "shape.phi_blocky_sampled_W": 1620926743313.5303,
+  "shape.phi_long_sampled_W": 988033043538.0443,
+  "shape.phi_sheet_sampled_W": 533417889602.24835,
+  "shape.phi_marginal_W": 542754079147.0127,
   "shape.phi_marginal_ci95_W": [
-    466056142299.91754,
-    1769768499416.061
+    468246716334.3947,
+    1765219311767.652
   ],
-  "nesca.phi_poly_blocky_W": 1616408399754.6133,
-  "nesca.phi_poly_sheet_W": 574691258097.43,
+  "nesca.phi_poly_blocky_W": 1615323764375.731,
+  "nesca.phi_poly_sheet_W": 574305631253.0253,
   "nesca.phi_ladder_note": "Two Phi ladders exist and must not be mixed.  nesca.phi_blocky_W / phi_long_W / phi_sheet_W are the STEADY SINGLE-CLASS benchmark-fit values (1.27 / 0.76 / 0.45 TW).  nesca.phi_poly_* are the POLYDISPERSE posterior scaled across the shape axis (1.62 / 0.58 TW).  Figures and text must state which ladder they use.",
   "sources.megaplume_heat_min_J": 1e+16,
   "sources.megaplume_heat_max_J": 1e+17,
@@ -191,14 +191,14 @@
   "modes.v2_peak_log10q": 4.525423728813559,
   "modes.v3_peak_log10q": 6.728813559322034,
   "modes.v6_peak_log10q": 5.288135593220339,
-  "modes.q_mean_log10": 6.013890808642482,
-  "modes.kernel_width_one_fraction_log10q": 0.39306483041428475,
-  "modes.kernel_width_one_fraction_picard_log10q": 1.2146573763813207,
-  "modes.kernel_width_four_fractions_log10q": 0.30508766147181454,
-  "modes.kernel_width_four_fractions_picard_log10q": 1.096148844757665,
-  "modes.kernel_peak_offset_one_fraction_log10q": -0.047789113727227495,
-  "modes.kernel_peak_offset_four_fractions_log10q": -0.047789113727227495,
-  "modes.kernel_peak_offset_picard_log10q": -1.5732128425407872,
+  "modes.q_mean_log10": 6.013672171473053,
+  "modes.kernel_width_one_fraction_log10q": 0.39298271156299247,
+  "modes.kernel_width_one_fraction_picard_log10q": 1.2146611683071917,
+  "modes.kernel_width_four_fractions_log10q": 0.3048605177232311,
+  "modes.kernel_width_four_fractions_picard_log10q": 1.0961573237675557,
+  "modes.kernel_peak_offset_one_fraction_log10q": -0.04757047655779889,
+  "modes.kernel_peak_offset_four_fractions_log10q": -0.04757047655779889,
+  "modes.kernel_peak_offset_picard_log10q": -1.5729942053713586,
   "modes.resolved_window_one_fraction_log10q": [
     3.865646773697189,
     6.986244846656824
@@ -258,17 +258,17 @@
     131.15095647757215,
     349.6053778338325
   ],
-  "shape.phi_valley_c1_15_W": 1166086142700.1821,
-  "shape.phi_valley_c1_45_W": 269506324635.07108,
-  "shape.phi_marginal_continuous_W": 612391438486.8389,
+  "shape.phi_valley_c1_15_W": 1167977820412.0486,
+  "shape.phi_valley_c1_45_W": 269943529991.3912,
+  "shape.phi_marginal_continuous_W": 610130546928.8468,
   "shape.phi_marginal_continuous_ci95_W": [
-    354182050532.0886,
-    1703964983564.4211
+    354413978758.4024,
+    1698494253944.6506
   ],
-  "shape.nesca_nu_blocky_ratio_noise_free": 3.6102004552744984,
+  "shape.nesca_nu_blocky_ratio_noise_free": 3.607975380423011,
   "shape.lengthscale_confusion_blocky_as_sheet": 0.938,
-  "shape.lengthscale_p_correct_single_flux": 0.5953333333333334,
-  "shape.profile_p_correct_nesca": 0.5419999999999999,
+  "shape.lengthscale_p_correct_single_flux": 0.5973333333333333,
+  "shape.profile_p_correct_nesca": 0.5433333333333333,
   "shape.profile_dchi2_sheet": 2.8318032600616982,
   "shape.profile_dchi2_blocky": 0.34367463737611026,
   "shape.profile_log_q_sd_blocky": 0.4242640687119285,
@@ -276,29 +276,29 @@
   "shape.profile_weight_blocky": 0.4039269628745286,
   "shape.profile_weight_long": 0.47965706245583356,
   "shape.profile_weight_sheet": 0.11641597466963781,
-  "shape.profile_phi_marginal_W": 1078302356384.7748,
+  "shape.profile_phi_marginal_W": 1074014278566.709,
   "shape.profile_phi_marginal_ci95_W": [
-    504518932106.5259,
-    2169168057559.389
+    504469765090.81244,
+    2141701948046.2334
   ],
   "shape.profile_dstar_best_um": 419.50776662751383,
   "shape.profile_dstar_ci95_um": [
     245.32963018738283,
     767.1031343341805
   ],
-  "shape.power_info_for_p95": 21431.42908664431,
-  "shape.power_ncores_p95_sigma_residual": 20676.1876216838,
-  "shape.power_sigma_p95_124_cores": 0.07606507131974188,
+  "shape.power_info_for_p95": 23724.750258174863,
+  "shape.power_ncores_p95_sigma_residual": 22873.68012607286,
+  "shape.power_sigma_p95_124_cores": 0.07229529227887364,
   "shape.residual_correlation_fractions": 0.36456592236394486,
-  "kernel_maps.cored_r_min_m": 279.5886361445461,
-  "kernel_maps.cored_r_max_m": 7267.169721634624,
+  "kernel_maps.cored_r_min_m": 279.31482522259495,
+  "kernel_maps.cored_r_max_m": 7268.070022678974,
   "kernel_maps.front_radius_at_shutoff_m": 5771.7683769340265,
-  "kernel_maps.front_t_reaches_r_max_h": 22.470299547022794,
-  "kernel_maps.front_crossing_over_duration": 1.4873585011856332,
-  "kernel_maps.floor_frac_front_rmax_63_125": 0.3925347564051661,
-  "kernel_maps.floor_frac_front_rmax_125_250": 0.7976237997618385,
-  "kernel_maps.floor_frac_front_rmax_250_500": 0.9823935783846314,
-  "kernel_maps.floor_frac_front_rmax_over500": 0.9995452264490444,
+  "kernel_maps.front_t_reaches_r_max_h": 22.47586411891521,
+  "kernel_maps.front_crossing_over_duration": 1.4877450545826578,
+  "kernel_maps.floor_frac_front_rmax_63_125": 0.3927017922565317,
+  "kernel_maps.floor_frac_front_rmax_125_250": 0.7978068009370579,
+  "kernel_maps.floor_frac_front_rmax_250_500": 0.9824364137714224,
+  "kernel_maps.floor_frac_front_rmax_over500": 0.9995475243779783,
   "kernel_maps.floor_frac_shutoff_250_500": 0.740758427046496,
   "kernel_maps.t_half_local_250_500_r_max_h": 23.978852535231493,
   "kernel_maps.after_shutoff_share_250_500_r_max": 1.0,
@@ -314,69 +314,69 @@
   "kernel_maps.ratio_250_500_at_1km": 1.133653598821455,
   "kernel_maps.ratio_250_500_at_8km": 0.09786214397011957,
   "kernel_maps.reproduction_max_rel_diff": 3.273294799654991e-07,
-  "nesca_vent.mass_total_kg": 19608978.579459906,
+  "nesca_vent.mass_total_kg": 19604688.144530773,
   "nesca_vent.mass_total_ci95_kg": [
-    17757906.016579382,
-    21770488.2717759
+    17632441.74434906,
+    21852200.057348505
   ],
-  "nesca_vent.q_mean_m3s": 1032898.3863606151,
+  "nesca_vent.q_mean_m3s": 1034111.279217872,
   "nesca_vent.q_mean_ci95_m3s": [
-    925951.86886812,
-    1461099.017490152
+    922306.4769475947,
+    1395133.7146713901
   ],
-  "nesca_vent.phi_W": 1617236318123.6973,
+  "nesca_vent.phi_W": 1619768891803.8105,
   "nesca_vent.phi_ci95_W": [
-    1397916520057.059,
-    2568046617687.5996
+    1390583372058.598,
+    2414633004955.546
   ],
-  "nesca_vent.phi_ci95_upper_mcse_W": 129291056616.84973,
-  "nesca_vent.sigma_log": 0.980402410030365,
-  "nesca_vent.vent_x_median_m": 470.03895568847656,
-  "nesca_vent.vent_y_median_m": -761.2254638671875,
-  "nesca_vent.max_rhat": 1.0017045736312866,
+  "nesca_vent.phi_ci95_upper_mcse_W": 111140566954.35728,
+  "nesca_vent.sigma_log": 0.9803216755390167,
+  "nesca_vent.vent_x_median_m": 468.3114929199219,
+  "nesca_vent.vent_y_median_m": -762.0993041992188,
+  "nesca_vent.max_rhat": 1.0011746883392334,
   "nesca_vent.n_divergences": 0,
   "nesca_vent.n_observations": 492,
   "nesca_vent.ppc_classes_with_trend": 0,
-  "nesca_vent.corr_mass_qmean_spearman": -0.13860230328764395,
-  "nesca_vent.corr_log_mass_log_qmean_pearson": -0.019912148747690317,
+  "nesca_vent.corr_mass_qmean_spearman": -0.11129328226833012,
+  "nesca_vent.corr_log_mass_log_qmean_pearson": -0.014836569360055,
   "nesca_vent.n_map_draws": 400,
-  "vent.misfit_delta_nll_centroid": 55.60707321720679,
-  "vent.misfit_delta_nll_profiled": 1.502672669043584,
+  "vent.misfit_delta_nll_centroid": 55.55633723770802,
+  "vent.misfit_delta_nll_profiled": 1.4957092063333257,
   "vent.misfit_argmin_xy_m": [
     480.0,
     -750.0
   ],
   "vent.conditional_over_marginal_sd": [
-    0.9909820606710168,
-    0.9476142318716552
+    0.9982558473059916,
+    0.9164102847303238
   ],
-  "vent.phi_ci95_width_profiled_W": 532436981927.28784,
-  "vent.phi_ci95_width_sampled_W": 1121606503491.7256,
-  "vent.phi_ci95_width_ratio": 2.106552590377536,
-  "context.nesca_blocky_over_global_hydrothermal": 0.1794668892121442,
-  "context.nesca_sheet_over_global_hydrothermal": 0.05921113067370525,
+  "vent.phi_ci95_width_profiled_W": 537158974552.71436,
+  "vent.phi_ci95_width_sampled_W": 1165249970535.5947,
+  "vent.phi_ci95_width_ratio": 2.169283258286588,
+  "context.nesca_blocky_over_global_hydrothermal": 0.18010297147928114,
+  "context.nesca_sheet_over_global_hydrothermal": 0.059268654400249816,
   "context.nesca_blocky_over_ridge_axis": [
-    0.4038005007273245,
-    0.807601001454649
+    0.4052316858283826,
+    0.8104633716567652
   ],
   "context.nesca_sheet_over_ridge_axis": [
-    0.13322504401583682,
-    0.26645008803167364
+    0.13335447240056209,
+    0.26670894480112417
   ],
-  "context.nesca_blocky_over_large_vent_field": 1615.2020029092978,
-  "context.nesca_sheet_over_large_vent_field": 532.9001760633473,
-  "context.nesca_blocky_black_smoker_equivalents": 260516.45208214482,
-  "context.nesca_blocky_over_earth": 0.03436600006189995,
+  "context.nesca_blocky_over_large_vent_field": 1620.9267433135303,
+  "context.nesca_sheet_over_large_vent_field": 533.4178896022484,
+  "context.nesca_blocky_black_smoker_equivalents": 261439.79730863392,
+  "context.nesca_blocky_over_earth": 0.034487803049224046,
   "context.nesca_blocky_over_ep86": [
-    2.3074314327275682,
-    23.074314327275683
+    2.3156096333050433,
+    23.15609633305043
   ],
   "context.nesca_blocky_hours_for_megaplume_range": [
-    1.7197711325112595,
-    17.197711325112596
+    1.7136972964610295,
+    17.136972964610294
   ],
-  "context.nesca_blocky_heat_in_reference_duration_J": 8.722090815710208e+16,
-  "context.nesca_sheet_heat_in_reference_duration_J": 2.877660950742075e+16,
+  "context.nesca_blocky_heat_in_reference_duration_J": 8.753004413893064e+16,
+  "context.nesca_sheet_heat_in_reference_duration_J": 2.8804566038521412e+16,
   "context.vent_field_days_for_floor": 115.74074074074075,
   "context.vent_field_years_for_floor": 0.3168808781402895,
   "context.vent_field_years_for_ceiling": 3.168808781402895,
@@ -418,7 +418,7 @@
     19
   ],
   "modes.modes_four_fractions_60_cores_mean": 16.375,
-  "nesca_vent.ppc_max_abs_slope_z": 1.1539772613645092,
+  "nesca_vent.ppc_max_abs_slope_z": 1.138836609476307,
   "_sources": {
     "constants.rho_tephra_kgm3": "results/constants.json#rho_tephra_kgm3",
     "constants.nu_seawater_m2s": "results/constants.json#nu_seawater_m2s",

@@ -1,8 +1,8 @@
 {
   "_description": "Figure 1e-g: space-time and settling-speed maps of the front-limited deposit at the reference constant-flux case.",
-  "_generated": "2026-09-23",
+  "_generated": "2026-10-09",
   "_script": "experiments/kernel_maps/run.py",
-  "_git_commit": "66df67d92658c6d092ef3733ced85d2812a215a9",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "_grids_file": "results/kernel_maps_grids.npz",
   "parameters": {
     "q_umb_m^3s^-1": 760000.0,
@@ -40,34 +40,34 @@
   "cored_radii": {
     "vent_source": "results/vent_shape.json#by_shape.blocky.vent_x_m.median, #by_shape.blocky.vent_y_m.median",
     "vent_xy_m": [
-      466.8453063964844,
-      -761.49169921875
+      467.0166931152344,
+      -762.3856201171875
     ],
     "n_cores": 124,
     "cores": "all cores not logged 'on flow' (the polydisperse set)",
-    "r_min_m": 279.5886361445461,
-    "r_median_m": 2886.343821446604,
-    "r_max_m": 7267.169721634624,
-    "r_p05_m": 1188.7833608485853,
-    "r_p95_m": 6129.046486556565
+    "r_min_m": 279.31482522259495,
+    "r_median_m": 2886.3411012724264,
+    "r_max_m": 7268.070022678974,
+    "r_p05_m": 1189.4112093322074,
+    "r_p95_m": 6128.163535760198
   },
   "front": {
     "front_radius_at_shutoff_m": 5771.7683769340265,
     "thickness_at_shutoff_m": 392.1386870782126,
-    "t_reaches_r_min_h": 0.15992202923829799,
-    "t_reaches_r_median_h": 5.304567951608149,
-    "t_reaches_r_max_h": 22.470299547022794,
-    "t_reaches_r_max_over_duration": 1.4980199698015195,
-    "crossing_time_r_min_to_r_max_h": 22.3103775177845,
-    "crossing_time_over_duration": 1.4873585011856332
+    "t_reaches_r_min_h": 0.1596883001753451,
+    "t_reaches_r_median_h": 5.304560453814746,
+    "t_reaches_r_max_h": 22.47586411891521,
+    "t_reaches_r_max_over_duration": 1.4983909412610141,
+    "crossing_time_r_min_to_r_max_h": 22.316175818739865,
+    "crossing_time_over_duration": 1.4877450545826578
   },
   "deposition_timing": {
     "63-125": {
       "w_s_m s^-1": 0.0033954034821618104,
       "settling_window_over_duration": 7.62939453125,
       "fraction_on_seafloor_at_shutoff": 0.17705705796771365,
-      "fraction_on_seafloor_when_front_reaches_r_max": 0.3925347564051661,
-      "fraction_on_seafloor_when_front_reaches_r_median": 0.017169569173515455,
+      "fraction_on_seafloor_when_front_reaches_r_max": 0.3927017922565317,
+      "fraction_on_seafloor_when_front_reaches_r_median": 0.017169513453390975,
       "t_half_of_class_mass_on_seafloor_h": 26.120791565299946,
       "t_90pc_of_class_mass_on_seafloor_h": 47.123946110538284,
       "t_half_local_deposit_h": {
@@ -95,8 +95,8 @@
       "w_s_m s^-1": 0.011169468130433567,
       "settling_window_over_duration": 3.90625,
       "fraction_on_seafloor_at_shutoff": 0.4506038086519039,
-      "fraction_on_seafloor_when_front_reaches_r_max": 0.7976237997618385,
-      "fraction_on_seafloor_when_front_reaches_r_median": 0.05262476206281217,
+      "fraction_on_seafloor_when_front_reaches_r_max": 0.7978068009370579,
+      "fraction_on_seafloor_when_front_reaches_r_median": 0.0526245982689417,
       "t_half_of_class_mass_on_seafloor_h": 15.884449564223386,
       "t_90pc_of_class_mass_on_seafloor_h": 26.46187418045839,
       "t_half_local_deposit_h": {
@@ -124,8 +124,8 @@
       "w_s_m s^-1": 0.03007959503276518,
       "settling_window_over_duration": 2.5,
       "fraction_on_seafloor_at_shutoff": 0.740758427046496,
-      "fraction_on_seafloor_when_front_reaches_r_max": 0.9823935783846314,
-      "fraction_on_seafloor_when_front_reaches_r_median": 0.12051023311064499,
+      "fraction_on_seafloor_when_front_reaches_r_max": 0.9824364137714224,
+      "fraction_on_seafloor_when_front_reaches_r_median": 0.12050989179395122,
       "t_half_of_class_mass_on_seafloor_h": 11.59455560247393,
       "t_90pc_of_class_mass_on_seafloor_h": 18.052166177199002,
       "t_half_local_deposit_h": {
@@ -153,8 +153,8 @@
       "w_s_m s^-1": 0.06252985953254946,
       "settling_window_over_duration": 2.0,
       "fraction_on_seafloor_at_shutoff": 0.8781239837034182,
-      "fraction_on_seafloor_when_front_reaches_r_max": 0.9995452264490444,
-      "fraction_on_seafloor_when_front_reaches_r_median": 0.19550362854021294,
+      "fraction_on_seafloor_when_front_reaches_r_max": 0.9995475243779783,
+      "fraction_on_seafloor_when_front_reaches_r_median": 0.195503147270327,
       "t_half_of_class_mass_on_seafloor_h": 9.67012643273693,
       "t_90pc_of_class_mass_on_seafloor_h": 15.33953100467212,
       "t_half_local_deposit_h": {
@@ -191,14 +191,14 @@
           0.5059253878203351
         ],
         "mask_edge_m": 9500.0,
-        "ratio_at_r_min": 2.113917280769602,
-        "ratio_at_r_max": 1.090151329440848,
+        "ratio_at_r_min": 2.1139318105283795,
+        "ratio_at_r_max": 1.0898934782255094,
         "ratio_min_in_cored_annulus": 1.092204777505501,
         "ratio_max_in_cored_annulus": 2.113895451773349,
         "ratio_at_1km": 2.058840178755298,
         "ratio_at_8km": 0.8608794504067894,
-        "front_limited_deposit_at_r_max_kg_m^-2": 2.320860834838351,
-        "quasi_steady_deposit_at_r_max_kg_m^-2": 2.12893223880925
+        "front_limited_deposit_at_r_max_kg_m^-2": 2.3198850947817955,
+        "quasi_steady_deposit_at_r_max_kg_m^-2": 2.128541186425879
       },
       "125-250": {
         "w_s_m s^-1": 0.011169468130433567,
@@ -210,14 +210,14 @@
           0.5327455586902388
         ],
         "mask_edge_m": 9500.0,
-        "ratio_at_r_min": 1.443570336181885,
-        "ratio_at_r_max": 0.508179906899306,
+        "ratio_at_r_min": 1.4435849618518248,
+        "ratio_at_r_max": 0.507914258474904,
         "ratio_min_in_cored_annulus": 0.5102954495476135,
         "ratio_max_in_cored_annulus": 1.4435483630920893,
         "ratio_at_1km": 1.3884238963990048,
         "ratio_at_8km": 0.2906719969715483,
-        "front_limited_deposit_at_r_max_kg_m^-2": 0.6520356223278111,
-        "quasi_steady_deposit_at_r_max_kg_m^-2": 1.2830701334019539
+        "front_limited_deposit_at_r_max_kg_m^-2": 0.6512993975000951,
+        "quasi_steady_deposit_at_r_max_kg_m^-2": 1.2822940587105844
       },
       "250-500": {
         "w_s_m s^-1": 0.03007959503276518,
@@ -229,14 +229,14 @@
           0.47778271830123076
         ],
         "mask_edge_m": 8160.0,
-        "ratio_at_r_min": 1.1884400535955628,
-        "ratio_at_r_max": 0.3408802321433674,
+        "ratio_at_r_min": 1.188454843233785,
+        "ratio_at_r_max": 0.34050842152291116,
         "ratio_min_in_cored_annulus": 0.34384121798937567,
         "ratio_max_in_cored_annulus": 1.1884178341656126,
         "ratio_at_1km": 1.133653598821455,
         "ratio_at_8km": 0.09786214397011957,
-        "front_limited_deposit_at_r_max_kg_m^-2": 0.018978673579742353,
-        "quasi_steady_deposit_at_r_max_kg_m^-2": 0.05567300647167733
+        "front_limited_deposit_at_r_max_kg_m^-2": 0.018926822242834204,
+        "quasi_steady_deposit_at_r_max_kg_m^-2": 0.055582098870663614
       },
       "500-1000": {
         "w_s_m s^-1": 0.06252985953254946,
@@ -250,14 +250,14 @@
           1.1500967234336354
         ],
         "mask_edge_m": 5900.0,
-        "ratio_at_r_min": 1.0932778979008086,
+        "ratio_at_r_min": 1.093292729506544,
         "ratio_at_r_max": null,
         "ratio_min_in_cored_annulus": 0.9385334552468007,
         "ratio_max_in_cored_annulus": 1.3510126521894081,
         "ratio_at_1km": 1.040457379611563,
         "ratio_at_8km": null,
-        "front_limited_deposit_at_r_max_kg_m^-2": 3.7818250651615196e-05,
-        "quasi_steady_deposit_at_r_max_kg_m^-2": 9.703275049245376e-05
+        "front_limited_deposit_at_r_max_kg_m^-2": 3.761265733729965e-05,
+        "quasi_steady_deposit_at_r_max_kg_m^-2": 9.670200231875849e-05
       }
     },
     "ratio_min_in_map": 0.0026155970714961084,

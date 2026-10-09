@@ -1,8 +1,8 @@
 {
   "_description": "Forward-model acceptance checks.",
-  "_generated": "2026-09-16",
+  "_generated": "2026-10-09",
   "_script": "experiments/forward_checks/run.py",
-  "_git_commit": "239a20528bece9795b49ef58576935c17d40a763",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "_stratification_source": "results/stratification.json#N_primary.value_s^-1",
   "mtt_closure_verification": {
     "point_c_q_at_z_max": 3.520407555449104,

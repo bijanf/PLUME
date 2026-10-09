@@ -27,9 +27,9 @@
       "sheet": 3068.124804815117
     }
   },
-  "_generated": "2026-09-23",
+  "_generated": "2026-10-09",
   "_script": "experiments/constants/run.py",
-  "_git_commit": "5bf28a361b88594c8e5c72044cf2d9a884fd8a3e",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "rho_tephra_kgm3": 2600.0,
   "nu_seawater_m2s": 1.6e-06,
   "rho_seawater_kgm3": 1027.0,

@@ -1,8 +1,8 @@
 {
  "_description": "The NESCA megaplume on a ladder of verified heat fluxes, the ratios that follow, and the heat that lava cooling and dyke heating deliver over two of their parameters.",
- "_generated": "2026-09-23",
+ "_generated": "2026-10-09",
  "_script": "experiments/heat_context/run.py",
- "_git_commit": "5bf28a361b88594c8e5c72044cf2d9a884fd8a3e",
+ "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
  "_inputs": [
   "results/heat_flux_context.json",
   "results/vent_shape.json",
@@ -10,24 +10,24 @@
  ],
  "nesca": {
   "blocky": {
-   "median_W": 1615202002909.2979,
+   "median_W": 1620926743313.5303,
    "ci95_W": [
-    1394495047869.4683,
-    2516101551361.194
+    1391463870036.2256,
+    2556713840571.8203
    ]
   },
   "long": {
-   "median_W": 987683597875.123,
+   "median_W": 988033043538.0443,
    "ci95_W": [
-    843594179021.2096,
-    2046974219746.0876
+    838265889353.2422,
+    1970664718249.4756
    ]
   },
   "sheet": {
-   "median_W": 532900176063.3473,
+   "median_W": 533417889602.24835,
    "ci95_W": [
-    465618199061.29706,
-    673249860476.0997
+    465828016360.2925,
+    645938048697.9578
    ]
   },
   "_source": "results/vent_shape.json#by_shape.<shape>.phi_at_mass_weighted_mean_W"
@@ -194,103 +194,103 @@
  },
  "ratios": {
   "blocky": {
-   "over_global_hydrothermal_central": 0.1794668892121442,
+   "over_global_hydrothermal_central": 0.18010297147928114,
    "over_global_hydrothermal": {
-    "low": 0.14683654571902707,
-    "high": 0.23074314327275683
+    "low": 0.14735697666486638,
+    "high": 0.23156096333050433
    },
    "over_global_ridge_axis": {
-    "low": 0.4038005007273245,
-    "high": 0.807601001454649
+    "low": 0.4052316858283826,
+    "high": 0.8104633716567652
    },
-   "over_ocean_floor": 0.050633291627250714,
-   "over_whole_earth": 0.03436600006189995,
-   "over_large_vent_field": 1615.2020029092978,
+   "over_ocean_floor": 0.05081275057409186,
+   "over_whole_earth": 0.034487803049224046,
+   "over_large_vent_field": 1620.9267433135303,
    "over_tag_field": {
-    "low": 1794.668892121442,
-    "high": 3230.4040058185956
+    "low": 1801.0297147928113,
+    "high": 3241.8534866270606
    },
    "over_ridge_segment": {
-    "low": 161.52020029092978,
-    "high": 403.80050072732445
+    "low": 162.09267433135304,
+    "high": 405.2316858283826
    },
    "over_ep86_megaplume": {
-    "low": 2.3074314327275682,
-    "high": 23.074314327275683
+    "low": 2.3156096333050433,
+    "high": 23.15609633305043
    },
-   "mean_black_smokers": 260516.45208214482,
+   "mean_black_smokers": 261439.79730863392,
    "hours_to_release_megaplume_range": [
-    1.7197711325112595,
-    17.197711325112596
+    1.7136972964610295,
+    17.136972964610294
    ],
-   "heat_in_reference_duration_J": 8.722090815710208e+16,
-   "heat_in_reference_duration_over_floor": 8.722090815710208
+   "heat_in_reference_duration_J": 8.753004413893064e+16,
+   "heat_in_reference_duration_over_floor": 8.753004413893064
   },
   "long": {
-   "over_global_hydrothermal_central": 0.10974262198612478,
+   "over_global_hydrothermal_central": 0.10978144928200492,
    "over_global_hydrothermal": {
-    "low": 0.08978941798864755,
-    "high": 0.14109765683930328
+    "low": 0.08982118577618585,
+    "high": 0.14114757764829206
    },
    "over_global_ridge_axis": {
-    "low": 0.24692089946878076,
-    "high": 0.4938417989375615
+    "low": 0.24700826088451108,
+    "high": 0.49401652176902217
    },
-   "over_ocean_floor": 0.03096186827194743,
-   "over_whole_earth": 0.021014544635640914,
-   "over_large_vent_field": 987.683597875123,
+   "over_ocean_floor": 0.030972822681443395,
+   "over_whole_earth": 0.021021979649745625,
+   "over_large_vent_field": 988.0330435380444,
    "over_tag_field": {
-    "low": 1097.4262198612478,
-    "high": 1975.367195750246
+    "low": 1097.8144928200493,
+    "high": 1976.0660870760887
    },
    "over_ridge_segment": {
-    "low": 98.76835978751231,
-    "high": 246.92089946878076
+    "low": 98.80330435380444,
+    "high": 247.0082608845111
    },
    "over_ep86_megaplume": {
-    "low": 1.4109765683930329,
-    "high": 14.109765683930329
+    "low": 1.4114757764829204,
+    "high": 14.114757764829205
    },
-   "mean_black_smokers": 159303.8061088908,
+   "mean_black_smokers": 159360.1683125878,
    "hours_to_release_megaplume_range": [
-    2.8124166319596853,
-    28.124166319596856
+    2.811421941750898,
+    28.114219417508977
    ],
-   "heat_in_reference_duration_J": 5.333491428525665e+16,
-   "heat_in_reference_duration_over_floor": 5.333491428525665
+   "heat_in_reference_duration_J": 5.335378435105439e+16,
+   "heat_in_reference_duration_over_floor": 5.335378435105439
   },
   "sheet": {
-   "over_global_hydrothermal_central": 0.05921113067370525,
+   "over_global_hydrothermal_central": 0.059268654400249816,
    "over_global_hydrothermal": {
-    "low": 0.04844547055121339,
-    "high": 0.07612859658047819
+    "low": 0.04849253541838621,
+    "high": 0.07620255565746405
    },
    "over_global_ridge_axis": {
-    "low": 0.13322504401583682,
-    "high": 0.26645008803167364
+    "low": 0.13335447240056209,
+    "high": 0.26670894480112417
    },
-   "over_ocean_floor": 0.016705334672832202,
-   "over_whole_earth": 0.01133830161836909,
-   "over_large_vent_field": 532.9001760633473,
+   "over_ocean_floor": 0.016721563937374555,
+   "over_whole_earth": 0.011349316800047837,
+   "over_large_vent_field": 533.4178896022484,
    "over_tag_field": {
-    "low": 592.1113067370526,
-    "high": 1065.8003521266946
+    "low": 592.6865440024982,
+    "high": 1066.8357792044967
    },
    "over_ridge_segment": {
-    "low": 53.29001760633473,
-    "high": 133.22504401583683
+    "low": 53.34178896022483,
+    "high": 133.3544724005621
    },
    "over_ep86_megaplume": {
-    "low": 0.7612859658047818,
-    "high": 7.612859658047818
+    "low": 0.7620255565746406,
+    "high": 7.620255565746405
    },
-   "mean_black_smokers": 85951.64130053988,
+   "mean_black_smokers": 86035.1434842336,
    "hours_to_release_megaplume_range": [
-    5.21256682311093,
-    52.1256682311093
+    5.207507719415021,
+    52.07507719415021
    ],
-   "heat_in_reference_duration_J": 2.877660950742075e+16,
-   "heat_in_reference_duration_over_floor": 2.8776609507420754
+   "heat_in_reference_duration_J": 2.8804566038521412e+16,
+   "heat_in_reference_duration_over_floor": 2.8804566038521413
   },
   "_definitions": {
    "large_vent_field_W": 1000000000.0,

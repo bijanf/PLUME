@@ -1,8 +1,8 @@
 {
   "_description": "Bayesian evidence of the four megaplume source mechanisms under the blocky, long and sheet settling laws, with the prior-width sweep (0.5x, 1x, 2x) for every mechanism. Same priors, likelihood, sampler and seed as experiments/source_discrimination/run.py, whose blocky evidences the blocky row reproduces.",
-  "_generated": "2026-09-23",
+  "_generated": "2026-10-09",
   "_script": "experiments/source_evidence_shape/run.py",
-  "_git_commit": "66df67d92658c6d092ef3733ced85d2812a215a9",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "by_shape": {
     "blocky": {
       "w_s_m s^-1": [

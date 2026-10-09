@@ -1,8 +1,8 @@
 {
   "_description": "Identifiability of the NESCA tephra deposit.",
-  "_generated": "2026-09-16",
+  "_generated": "2026-10-09",
   "_script": "experiments/identifiability/run.py",
-  "_git_commit": "5bf28a361b88594c8e5c72044cf2d9a884fd8a3e",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "_data": "Clague, Paduan & Davis (2009) JVGR 180, 171-188, Appendix A (mmc3.xls Sheet1, mmc1.xls LimuSamples); see data/raw/nesca_clague2009/README.rst",
   "n_cores": 132,
   "q_node_grid": {

@@ -1,8 +1,8 @@
 {
   "_description": "Ambient buoyancy frequency at the NESCA site from WOA23.",
-  "_generated": "2026-09-16",
+  "_generated": "2026-10-09",
   "_script": "experiments/stratification/run.py",
-  "_git_commit": "fe56ead85712d585149ecae5f1bbbd89d23f4533",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "site": {
     "lat": 40.98,
     "lon": -127.49,

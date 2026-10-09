@@ -1,8 +1,8 @@
 {
   "_description": "Clast shape inferred from the deposit's own length-scale ratios.",
-  "_generated": "2026-09-17",
+  "_generated": "2026-10-09",
   "_script": "experiments/clast_shape/run.py",
-  "_git_commit": "e2a3bba743e4c3b92fe707dde9c4bf306f460e98",
+  "_git_commit": "889ae0a84ce37b8da7bf43ccbcd869e0c0fb9fe6",
   "_why_this_works": "L_i^2 = Q/w_i, so L_i/L_j = sqrt(w_j/w_i) is independent of the umbrella flux, the erupted mass and the eruption history.  It depends only on the settling law, so it identifies the clast shape.",
   "n_cores": 124,
   "length_scales_m": {
